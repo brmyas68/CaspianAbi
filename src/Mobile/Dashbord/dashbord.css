@@ -5,19 +5,19 @@
     bottom: 0px;
     width: 100%;
     right: 0px;
-    
+   
 }
 
 .Header{
 
     height: 45px;
-    width: 98.5%;
+    width: 100%;
     box-shadow: 
     -10px -10px 15px rgba(255, 255, 255, 0.5),
     0px 0px 5px rgba(201, 201, 201, 0.12);
     padding: 0px;
     margin: 0px;
-    background-color: #f2f2f2;
+    background-color: #e0e0e0;
    padding-top: 8px;
  
  

@@ -41,6 +41,7 @@ const Dashbord = () => {
                 
         <div className='fixedbutton'>
             <Segmented
+            style={{background:'#e0e0e0' , borderRadius:'0px'}}
                 onChange={ChangeMenu}
                 block
                 defaultValue='0'
@@ -52,6 +53,7 @@ const Dashbord = () => {
                         padding: 2, 
                         fontSize:'12px',
                         textAlign:'center',
+                        fontWeight:'600'
                     }}
                     >
                     <Avatar src={masaj}  />
@@ -67,6 +69,7 @@ const Dashbord = () => {
                         padding: 2, 
                         fontSize:'12px',
                         textAlign:'center',
+                        fontWeight:'600'
                     }}
                     >
                     
@@ -83,6 +86,7 @@ const Dashbord = () => {
                         padding: 2, 
                         fontSize:'12px',
                         textAlign:'center',
+                        fontWeight:'600'
                     }}
                     >
                      
@@ -99,6 +103,7 @@ const Dashbord = () => {
                             padding: 2, 
                             fontSize:'12px',
                             textAlign:'center',
+                            fontWeight:'600'
                         }}
                         >
                         <Avatar src={gym} />
@@ -114,6 +119,7 @@ const Dashbord = () => {
                                 padding: 2, 
                                 fontSize:'12px',
                                 textAlign:'center',
+                                fontWeight:'600'
                             }}
                             >
                             <Avatar src={swim}  />
@@ -129,6 +135,7 @@ const Dashbord = () => {
                                     padding: 2, 
                                     fontSize:'12px',
                                     textAlign:'center',
+                                    fontWeight:'600'
                                 }}
                                 >
                                  <Avatar src={cafe}  />
@@ -142,8 +149,10 @@ const Dashbord = () => {
                                 <div
                                 style={{
                                     padding: 2,
+                                    paddingRight:'5px',
                                     fontSize:'12px',
                                     textAlign:'center',
+                                    fontWeight:'600'
                                 }}
                                 >
                                  <Avatar src={resturan}  />
