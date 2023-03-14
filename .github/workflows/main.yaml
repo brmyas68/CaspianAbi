@@ -39,10 +39,10 @@ jobs:
     - uses: appleboy/ssh-action@master
       name: Docker-Compose Remote Deployment
       with:
-        ssh_host: 107.181.112.145
-        ssh_port: 2233
-        ssh_user: root
-        ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+        host: 107.181.112.145
+        port: 2233
+        username: root
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
         #docker_compose_filename: docker-compose.yaml
         script: |
            git clone .
