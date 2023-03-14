@@ -30,20 +30,21 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/caspianabi:latest   ## name of the repository in 
   deploy:
-    needs: build
+    #needs: build
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
 
-    - uses: alex-ac/github-action-ssh-docker-compose@master
+    - uses: appleboy/ssh-action@master
       name: Docker-Compose Remote Deployment
       with:
         ssh_host: 107.181.112.145
         ssh_port: 2233
         ssh_user: root
         ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-        docker_compose_filename: docker-compose.yaml
-        args: -p web up -d
+        #docker_compose_filename: docker-compose.yaml
+        script: |
+           git clone .
         #ssh_user: ${{ secrets.SSH_USER }}
         #docker_compose_prefix: asetco
