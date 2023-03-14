@@ -1,9 +1,10 @@
 
 
-import { Col, Row , Input , Badge , InputRef } from 'antd';
+import { Col, Row , Input , Badge , InputRef, Drawer } from 'antd';
 import { MenuOutlined  , ShoppingCartOutlined , MailOutlined, BellOutlined} from '@ant-design/icons';
 import { Avatar } from 'antd';
 import jef from '../../images/jef.jpg';
+import { useState } from 'react';
  
  
  
@@ -11,9 +12,25 @@ import jef from '../../images/jef.jpg';
 
 const Header =() => {
 
+    const [open, setOpen] = useState(false);
+
+    const showDrawer = () => {
+      setOpen(true);
+    };
+  
+    const onClose = () => {
+      setOpen(false);
+    };
+    
     return (
         <>
-        
+          <Drawer title="کاسپین آبی" bodyStyle={{textAlign:'right', fontFamily:'tahoma', fontSize:'12px'}} headerStyle={{textAlign:'right'}} width={200} placement="right" onClose={onClose} open={open}>
+                <p>پروفایل</p>
+                <p>پیام ها</p>
+                <p>اعلانات</p>
+                <p>مشاهده تراکنش ها</p>
+                <p>درباره کاسپین ابی</p>
+         </Drawer>
          <div className="Header">
 
                 <Row>
@@ -33,7 +50,7 @@ const Header =() => {
                         <span  style={{  paddingRight:'10px' ,    color: '#6b6b6b' ,    fontWeight:'600', fontSize:'15px', fontFamily:'Vazir'}}>
                             محمد رحیمی
                         </span>
-                        <MenuOutlined  style={{   fontSize:'17px' ,  fontWeight:'600' }} />
+                        <MenuOutlined  onClick={showDrawer} style={{   fontSize:'17px' ,  fontWeight:'600' }} />
                        
                     </Col>
                 </Row>

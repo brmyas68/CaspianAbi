@@ -1,5 +1,5 @@
 
-import { Avatar, Segmented, Space } from 'antd';
+import { Avatar, Segmented, Space , Drawer  } from 'antd';
 
 import './dashbord.css';
 import resturan from '../icon/resturan.png';
@@ -11,10 +11,13 @@ import bofe from '../icon/bofe.png';
 import masaj from '../icon/masaj.png';
 import Header from './Header/header';
 import { Navigate, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 const Dashbord = () => {
     let navigate = useNavigate();
 
+  
+    
     const ChangeMenu=(value : number | string)=>{
          switch(value){
             case '1':
@@ -37,6 +40,8 @@ const Dashbord = () => {
     return(
         <>
          
+       
+
          <Header/>
                 
         <div className='fixedbutton'>
