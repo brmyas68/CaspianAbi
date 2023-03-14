@@ -28,7 +28,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/caspianabi:latest   ## name of the repository in dockerhub
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/caspianabi:latest   ## name of the repository in 
   deploy:
     needs: build
     runs-on: ubuntu-latest
