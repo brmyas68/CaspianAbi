@@ -1,80 +1,9 @@
-version: '3.4'
-networks:
-  default:
-    name: web_net
-
-volumes:
-  traefik-acme:                     
-    name: traefik-acme
-    #nexus-data:
-    #name: nexus-data
-
+version: "3.8"
 services:
-  traefik:
-    image: traefik:v2.4.8
-    #container_name: treafik         #command in traefik is alwayes static in this session we use docker provider we can use file and kubernetes provider also
-    command:
-      - "--log.level=INFO"
-      - "--log.filepath=/log-file.log"       # log file for traefik we can access in container 
-      - "--log.format=json"
-      - "--api=true"
-      - "--ping=true"
-      - "--accesslog=true"
-      - "--accesslog.bufferingsize=100"
-      - "--api.insecure=true"
-      - "--providers.docker.endpoint=unix:///var/run/docker.sock"
-      - "--providers.docker.exposedbydefault=false"
-      - "--providers.docker.network=web_net"
-      - "--entrypoints.http.address=:80"                # we open 80 and 443 ports for accessing outside of container in browser
-      - "--entrypoints.https.address=:443"
-
-      - "--certificatesresolvers.mycert.acme.email=yaserbarimani@gmail.com"
-      - "--certificatesresolvers.mycert.acme.storage=/acme/acme.json"       # traefik easily generate ssl cert by this config it uses lets encript ssl of google
-      - "--certificatesresolvers.mycert.acme.tlschallenge=true"
-
-      - "--providers.file.filename=/traefik/config.yml"          # we add traefik/config.yaml file as a provider
-    ports:
-      - 80:80
-      - 443:443
-    volumes:
-      - /etc/localtime:/etc/localtime:ro
-      - /var/run/docker.sock:/var/run/docker.sock:ro
-      - traefik-acme:/acme
-      - ./traefik:/traefik           # we add traefik directory in the root source into the container this is a traefik ui
-    networks:
-      - default
-
-    labels:
-      - "traefik.enable=true"
-      - "traefik.docker.network=web_net"
-      - "traefik.http.routers.traefik.entrypoints=http"
-      - "traefik.http.routers.traefik.rule=Host(`traefik.mehraman.com`)"         # traefik will rout http request to host
-      - "traefik.http.routers.traefik.middlewares=https-redirect"
-      - "traefik.http.middlewares.https-redirect.redirectscheme.scheme=https"
-      - "traefik.http.middlewares.web-auth.basicauth.users=yaser:$$apr1$$0hfehRp/$$R6dN.k6Hk7R4Fov6N2It2."    # we use auth user and pass for our traefik ui   to create user and pass use ---> echo $(htpasswd -nb user password) | sed -e s/\\$/\\$\\$/g
-      - "traefik.http.routers.traefik-secure.middlewares=web-auth"
-      - "traefik.http.routers.traefik-secure.entrypoints=https"
-      - "traefik.http.routers.traefik-secure.rule=Host(`traefik.mehraman.com`)"         # traefik will route https request to host
-      - "traefik.http.routers.traefik-secure.tls=true"
-      - "traefik.http.routers.traefik-secure.tls.options=default"
-      - "traefik.http.routers.traefik-secure.tls.certresolver=mycert"
-      - "traefik.http.services.traefik.loadbalancer.server.port=8080"           # traefik port is 8080 into the container
-  nginx:
-     image: nginx             # we did reverse proxy for nginx to nginx.mehraman.com
-     networks:
-        - default
-     labels:
-      - "traefik.enable=true"
-      - "traefik.docker.network=web_net"
-      - "traefik.http.routers.nginx.entrypoints=http"
-      - "traefik.http.routers.nginx.rule=Host(`www.homacall.com`)"
-      - "traefik.http.routers.nginx.middlewares=https-redirect"
-      - "traefik.http.middlewares.https-redirect.redirectscheme.scheme=https"
-        #- "traefik.http.middlewares.web-auth.basicauth.users=yaser:$$apr1$$0hfehRp/$$R6dN.k6Hk7R4Fov6N2It2."
-        #- "traefik.http.routers.traefik-secure.middlewares=web-auth"
-      - "traefik.http.routers.nginx-secure.entrypoints=https"
-      - "traefik.http.routers.nginx-secure.rule=Host(`www.homacall.com`)"
-      - "traefik.http.routers.nginx-secure.tls=true"
-      - "traefik.http.routers.nginx-secure.tls.options=default"
-      - "traefik.http.routers.nginx-secure.tls.certresolver=mycert"
-      - "traefik.http.services.nginx.loadbalancer.server.port=80"           # nginx port is 80 into tje container
+   app:
+      container_name: web
+      #image: test
+      build:
+       context: .
+      ports:
+        - 8080:80
