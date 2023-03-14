@@ -45,6 +45,7 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         #docker_compose_filename: docker-compose.yaml
         script: |
+           rm -rf CaspianAbi
            git clone git@github.com:brmyas68/CaspianAbi.git 
            cd CaspianAbi/
            docker compose down 
