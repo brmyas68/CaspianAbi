@@ -46,6 +46,8 @@ const Dashbord = () => {
 
          <div style={{display:'flex' , justifyContent:'center' , marginTop:'120px' , fontFamily:'tahoma', fontSize:'14px'}}>
             کاسپین آبی خوش آمدید
+            <br />
+            mohammad
          </div>
                 
         <div className='fixedbutton'>
@@ -160,7 +162,7 @@ const Dashbord = () => {
                                     padding: 2,
                                     paddingRight:'5px',
                                     fontSize:'12px',
-                                    textAlign:'left',
+                                    textAlign:'right',
                                     fontWeight:'600'
                                 }}
                                 >
