@@ -24,7 +24,7 @@ const Header =() => {
     
     return (
         <>
-          <Drawer title="کاسپین آبی" bodyStyle={{textAlign:'right', fontFamily:'tahoma', fontSize:'12px'}} headerStyle={{textAlign:'right'}} width={200} placement="right" onClose={onClose} open={open}>
+          <Drawer title="کاسپین آبی" style={{ fontFamily:'tahoma', fontSize:'12px'}} bodyStyle={{textAlign:'right', fontFamily:'tahoma', fontSize:'12px'}} headerStyle={{textAlign:'right'}} width={200} placement="right" onClose={onClose} open={open}>
                 <p>پروفایل</p>
                 <p>پیام ها</p>
                 <p>اعلانات</p>
@@ -35,13 +35,13 @@ const Header =() => {
 
                 <Row>
                     <Col span={9} style={{textAlign:'left' , paddingLeft:'5px' , paddingTop:'7px' , }}>
-                    <Badge count={5} size='small'  offset={[0,  -2]} ><BellOutlined   style={{   fontSize:'17px' ,  fontWeight:'600' }}/></Badge>
+                    <Badge count={5} size='small'  offset={[0,  -2]} ><BellOutlined   style={{   fontSize:'17px' ,  fontWeight:'600' , paddingLeft:'5px'  }}/></Badge>
                     <Badge count={0} size='small'  offset={[-7,  0]} ><MailOutlined    style={{  paddingRight:'12px' ,  fontWeight:'600' ,paddingLeft:'12px' , fontSize:'17px'  }}/></Badge>
                     <Badge count={2} size='small'  offset={[-8,   1]} ><ShoppingCartOutlined     style={{  paddingRight:'12px' , fontWeight:'600' , fontSize:'18px'  }} /></Badge>
                     </Col>
                     <Col span={6} style={{ textAlign:'center', paddingTop:'5px' , paddingRight:'5px'}} >
                     <Avatar
-                        size={73}          
+                        size={80}          
                          src={jef}
                          className="BoxShadow"
                     />

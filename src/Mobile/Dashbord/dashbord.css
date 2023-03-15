@@ -3,7 +3,7 @@ body,html{
     padding: 0;
     margin: 0;
   }
-  
+
 .fixedbutton {
     position: fixed;
     bottom: 0px;
@@ -26,6 +26,14 @@ body,html{
  
  
 }
+
+ 
+ .ant-drawer-close  {
+  margin-left: -20px;
+  
+ }
+
+
 .BoxShadow{
     box-shadow: 
                             -10px -10px 15px rgba(221, 221, 221, 0.5),

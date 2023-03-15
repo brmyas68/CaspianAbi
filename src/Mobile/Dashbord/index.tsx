@@ -160,7 +160,7 @@ const Dashbord = () => {
                                 <div
                                 style={{
                                     padding: 2,
-                                    paddingLeft:'5px',
+                                    paddingLeft:'-8px',
                                     fontSize:'12px',
                                     textAlign:'right',
                                     fontWeight:'600'
