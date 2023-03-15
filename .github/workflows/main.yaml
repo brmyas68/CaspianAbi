@@ -30,11 +30,11 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/caspianabi:latest   ## name of the repository in n
   deploy:
-    needs: build
+    #needs: build
     runs-on: ubuntu-latest
 
     steps:
-#     - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
 
     - uses: appleboy/ssh-action@master
       name: Docker-Compose Remote Deployment
@@ -44,11 +44,12 @@ jobs:
         username: root
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         #docker_compose_filename: docker-compose.yaml
-        run: |
-           rm -rf CaspianAbi
-           git clone git@github.com:brmyas68/CaspianAbi.git 
-           cd CaspianAbi/
-           docker compose down 
-           docker compose up -d
+        script: |
+           #rm -rf CaspianAbi
+           #git clone git@github.com:brmyas68/CaspianAbi.git 
+           #cd CaspianAbi/
+           #docker compose down 
+           #docker compose up -d
+           ls -al
         #ssh_user: ${{ secrets.SSH_USER }}
         #docker_compose_prefix: asetco
