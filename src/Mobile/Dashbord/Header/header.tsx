@@ -24,12 +24,12 @@ const Header =() => {
     
     return (
         <>
-          <Drawer title="کاسپین آبی" style={{ fontFamily:'tahoma', fontSize:'14px'}} bodyStyle={{textAlign:'right', fontFamily:'tahoma', fontSize:'12px'}} headerStyle={{textAlign:'right'}} width={200} placement="right" onClose={onClose} open={open}>
-                <p>پروفایل</p>
-                <p>پیام ها</p>
-                <p>اعلانات</p>
-                <p>مشاهده تراکنش ها</p>
-                <p>درباره کاسپین ابی</p>
+          <Drawer title="کاسپین آبی" style={{ fontFamily:'tahoma', fontSize:'13px'}} bodyStyle={{textAlign:'right', fontFamily:'tahoma', fontSize:'12px'}} headerStyle={{textAlign:'right'}} width={200} placement="right" onClose={onClose} open={open}>
+                <p style={{ fontFamily:'tahoma', fontSize:'13px'}}>پروفایل</p>
+                <p style={{ fontFamily:'tahoma', fontSize:'13px'}}>پیام ها</p>
+                <p style={{ fontFamily:'tahoma', fontSize:'13px'}}>اعلانات</p>
+                <p style={{ fontFamily:'tahoma', fontSize:'13px'}}>مشاهده تراکنش ها</p>
+                <p style={{ fontFamily:'tahoma', fontSize:'13px'}}>درباره کاسپین ابی</p>
          </Drawer>
          <div className="Header">
 
