@@ -45,11 +45,13 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         #docker_compose_filename: docker-compose.yaml
         script: |
-           #rm -rf CaspianAbi
-           #git clone git@github.com:brmyas68/CaspianAbi.git 
-           #cd CaspianAbi/
-           #docker compose down 
-           #docker compose up -d
-           ls -al
+          ls -al
+          sudo rm -rf CaspianAbi
+          sudo git clone git@github.com:brmyas68/CaspianAbi.git 
+          sudo cd CaspianAbi/
+          sudo docker build -t test20 .
+          docker compose down 
+          docker compose up -d
+     
         #ssh_user: ${{ secrets.SSH_USER }}
         #docker_compose_prefix: asetco
