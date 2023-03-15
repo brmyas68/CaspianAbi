@@ -1,5 +1,9 @@
 
-
+body,html{
+    padding: 0;
+    margin: 0;
+  }
+  
 .fixedbutton {
     position: fixed;
     bottom: 0px;
@@ -18,7 +22,7 @@
     padding: 0px;
     margin: 0px;
     background-color: #e0e0e0;
-   padding-top: 8px;
+    padding-top: 8px;
  
  
 }
