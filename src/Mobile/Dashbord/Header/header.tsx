@@ -24,7 +24,7 @@ const Header =() => {
     
     return (
         <>
-          <Drawer title="کاسپین آبی" style={{ fontFamily:'tahoma', fontSize:'12px'}} bodyStyle={{textAlign:'right', fontFamily:'tahoma', fontSize:'12px'}} headerStyle={{textAlign:'right'}} width={200} placement="right" onClose={onClose} open={open}>
+          <Drawer title="کاسپین آبی" style={{ fontFamily:'tahoma', fontSize:'14px'}} bodyStyle={{textAlign:'right', fontFamily:'tahoma', fontSize:'12px'}} headerStyle={{textAlign:'right'}} width={200} placement="right" onClose={onClose} open={open}>
                 <p>پروفایل</p>
                 <p>پیام ها</p>
                 <p>اعلانات</p>

@@ -160,14 +160,14 @@ const Dashbord = () => {
                                 <div
                                 style={{
                                     padding: 2,
-                                    paddingLeft:'-8px',
+                                  
                                     fontSize:'12px',
                                     textAlign:'right',
                                     fontWeight:'600'
                                 }}
                                 >
                                  <Avatar src={resturan}  />
-                                <div>رستوران</div>
+                                <div style={{  paddingLeft:'-5px',}}>رستوران</div>
                                 </div>
                             ),
                             value: '1',
