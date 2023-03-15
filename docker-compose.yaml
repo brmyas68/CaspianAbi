@@ -2,8 +2,8 @@ version: "3.8"
 services:
    app:
       container_name: web
-      #image: test
-      build:
-       context: .
+      image: asetcoservice/caspianabi
+      #build:
+       #context: .
       ports:
         - 8080:80
