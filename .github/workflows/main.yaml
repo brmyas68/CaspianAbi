@@ -46,10 +46,10 @@ jobs:
         #docker_compose_filename: docker-compose.yaml
         script: |
           ls -al
-          sudo rm -rf CaspianAbi
-          sudo git clone git@github.com:brmyas68/CaspianAbi.git 
-          sudo cd CaspianAbi/
-          sudo docker build -t test20 .
+          rm -rf CaspianAbi
+          git clone git@github.com:brmyas68/CaspianAbi.git 
+          cd CaspianAbi/
+          docker build -t test20 .
           docker compose down 
           docker compose up -d
      
