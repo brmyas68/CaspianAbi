@@ -43,6 +43,10 @@ const Dashbord = () => {
        
 
          <Header/>
+
+         <div style={{display:'flex' , justifyContent:'center' , marginTop:'120px' , fontFamily:'tahoma', fontSize:'14px'}}>
+            کاسپین آبی خوش آمدید
+         </div>
                 
         <div className='fixedbutton'>
             <Segmented
