@@ -58,7 +58,7 @@ const Pool = () => {
                     style={{
                         fontFamily:'tahoma',
                         fontSize:'14px', fontWeight:'600' ,
-                        width:'79%',
+                        width:'80%',
                         height:'40px'
                     }}
                     containerStyle={{
@@ -114,8 +114,8 @@ const Pool = () => {
              <br />
              <Row justify="start" dir="rtl">
               
-              <Col span={24} style={{ fontSize:'17px' ,  fontWeight:'600' , paddingBottom:'5px'}}>
-              قیمت   :  
+              <Col span={24} style={{ fontSize:'17px' ,  fontWeight:'600' , paddingBottom:'5px', paddingRight:'3px'}}>
+                  قیمت   :  
               </Col>
                  
              </Row>
