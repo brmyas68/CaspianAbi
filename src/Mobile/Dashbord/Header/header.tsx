@@ -3,7 +3,7 @@
 import { Col, Row , Input , Badge , InputRef, Drawer } from 'antd';
 import { MenuOutlined  , ShoppingCartOutlined , MailOutlined, BellOutlined} from '@ant-design/icons';
 import { Avatar } from 'antd';
-import jef from '../../images/jef.jpg';
+import jef from '../../images/my.jpg';
 import { useState } from 'react';
  
  
