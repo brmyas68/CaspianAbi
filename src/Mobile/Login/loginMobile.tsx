@@ -114,13 +114,13 @@ const Login =()=>{
                     <Col span={3}></Col>
                     <Col span={18}  >
                     <div style={{textAlign:'right' , marginBottom:'10px' , fontSize:'15px' , fontWeight:'600' , color:'#6b6b6b'}}>شماره موبایل</div>
-                    <div>  <Input ref={inputElementMobile} placeholder="" size="large" type="number" value={mobile}  onKeyDown={(event)=>{  if (event.key === 'Backspace') {} else if(mobile.length  == 11 || event.key === 'e' || event.key === 'E' || event.key === '-' || event.key === '+'|| event.key === '.') {event.preventDefault()} }} onChange={ChangeMobile}        prefix={<MobileOutlined  style={{ fontSize: '18px ' }} />} /> </div>
+                    <div>  <Input ref={inputElementMobile} placeholder="" size="large" type="number" value={mobile}  onKeyDown={(event)=>{  if (mobile.length  == 11 ) {  if(event.key === 'Backspace'){} else { event.preventDefault();}} else if( event.key === 'e' || event.key === 'E' || event.key === '-' || event.key === '+'|| event.key === '.') {event.preventDefault()} }} onChange={ChangeMobile}        prefix={<MobileOutlined  style={{ fontSize: '20px ' }} />} /> </div>
                     <div>  <Button onClick={F_SendActiveCode} size="large" type="primary" block  style={{ marginTop:'12px'}}  >  ارسال کد </Button></div>
                     
                     <div style={{marginTop:'50px' , direction:'rtl' , paddingRight:'10px'}}>
                         <span style={{color:'red'}}>*</span>
                         <span style={{textAlign:'justify', paddingRight:'10px'}}>
-                           برای ارسال کد فعال سازی ، لطفا شماره موبایل خود را صحیح وارد نماید.
+                           برای ارسال کد فعال سازی ، لطفا شماره موبایل خود را صحیح وارد نمایید.
                         </span>
                     </div>
 
