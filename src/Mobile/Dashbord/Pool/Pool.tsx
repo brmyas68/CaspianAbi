@@ -58,7 +58,7 @@ const Pool = () => {
                     style={{
                         fontFamily:'tahoma',
                         fontSize:'14px', fontWeight:'600' ,
-                        width:'70%',
+                        width:'85%',
                         height:'40px'
                     }}
                     containerStyle={{
