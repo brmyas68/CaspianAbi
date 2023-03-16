@@ -13,7 +13,9 @@ import { useState } from 'react';
 const Header =() => {
 
     const [open, setOpen] = useState(false);
-
+    const [badgeMessage, setBadgeMessage] = useState("2");
+    const [badgeAlert, setBadgeAlert] = useState("4");
+    
     const showDrawer = () => {
       setOpen(true);
     };
@@ -26,8 +28,8 @@ const Header =() => {
         <>
           <Drawer title="کاسپین آبی" style={{ fontFamily:'tahoma', fontSize:'13px'}} bodyStyle={{textAlign:'right', fontFamily:'tahoma', fontSize:'12px'}} headerStyle={{textAlign:'right'}} width={200} placement="right" onClose={onClose} open={open}>
                 <p style={{ fontFamily:'tahoma', fontSize:'13px'}}>پروفایل</p>
-                <p style={{ fontFamily:'tahoma', fontSize:'13px'}}>پیام ها</p>
-                <p style={{ fontFamily:'tahoma', fontSize:'13px'}}>اعلانات</p>
+                <p style={{ fontFamily:'tahoma', fontSize:'13px'}}> <span style={{marginRight:'5%'}}><Badge size={"small"} count={badgeMessage} /></span>  پیام ها   </p>
+                <p style={{ fontFamily:'tahoma', fontSize:'13px'}} ><span style={{marginRight:'5%'}}><Badge size={"small"} count={badgeAlert} /></span> اعلانات </p>
                 <p style={{ fontFamily:'tahoma', fontSize:'13px'}}>مشاهده تراکنش ها</p>
                 <p style={{ fontFamily:'tahoma', fontSize:'13px'}}>درباره کاسپین ابی</p>
          </Drawer>
