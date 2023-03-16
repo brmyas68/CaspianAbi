@@ -43,20 +43,27 @@ const Pool = () => {
            <br /> <br /> <br /><br />
 
            <div style={{marginRight:'20%'}}>
-             <Row justify="start" dir="rtl">
-                <Col span={4} style={{paddingTop:'5px'}}>
+            <Row justify="start" dir="rtl">
+              
+              <Col span={24} style={{ fontSize:'17px' ,  fontWeight:'600' , paddingBottom:'5px'}}>
                   تاریخ : 
-                </Col>
-                <Col  span={20}>
+              </Col>
+                 
+            </Row>
+             <Row justify="start" dir="rtl">
+              
+                <Col  span={24}>
                 <DatePicker 
+                 
                     style={{
                         fontFamily:'tahoma',
-                        fontSize:'12px',
-                        width:'85%'
+                        fontSize:'14px', fontWeight:'600' ,
+                        width:'100%',
+                        height:'40px'
                     }}
                     containerStyle={{
                         fontFamily:'tahoma',
-                        fontSize:'12px'
+                        fontSize:'14px', fontWeight:'600' ,
                     }}
                     className="green"
                     weekDays={weekDays}
@@ -69,16 +76,21 @@ const Pool = () => {
              </Row>
              <br />
              <Row justify="start" dir="rtl">
-                <Col span={4} style={{paddingTop:'5px' }}>
-                  ساعت   : 
-                </Col>
-                <Col span={20}>
+              
+              <Col span={24} style={{ fontSize:'17px' ,  fontWeight:'600' , paddingBottom:'5px'}}>
+              ساعت   :  
+              </Col>
+                 
+             </Row>
+             <Row justify="start" dir="rtl">
+               
+                <Col span={24}>
                 <Select
-                        size="middle"
+                        size="large"
                         defaultValue="1"
                         
                         style={{
-                            width: 145,
+                            width: '57%',
                         }}
                         options={options}
                         placement="bottomLeft"
@@ -87,19 +99,29 @@ const Pool = () => {
              </Row>
              <br />
              <Row justify="start" dir="rtl">
-                <Col span={4} style={{paddingTop:'5px' }}>
-                  تعداد   : 
-                </Col>
-                <Col span={20}>
-                    <Input  ref={inputElementCountPool} onKeyUp={(event)=>{  if ( countPool == "0") { setCountPool("1"); }    }}  onFocus={()=>{ inputElementCountPool.current?.select();   }} value={countPool}   onChange={ChangeCountPool}   min={1}  style={{textAlign:'left' , direction:'ltr' , width:'45%'}} />
+              
+              <Col span={24} style={{ fontSize:'17px' ,  fontWeight:'600' , paddingBottom:'5px'}}>
+                تعداد   :  
+              </Col>
+                 
+             </Row>
+             <Row justify="start" dir="rtl">
+               
+                <Col span={24}>
+                    <Input size="large"  ref={inputElementCountPool} onKeyUp={(event)=>{  if ( countPool == "0") { setCountPool("1"); }    }}  onFocus={()=>{ inputElementCountPool.current?.select();   }} value={countPool}   onChange={ChangeCountPool}   min={1}  style={{textAlign:'left' , direction:'ltr' , width:'57%'}} />
                 </Col>
              </Row>
              <br />
              <Row justify="start" dir="rtl">
-                <Col span={4} style={{paddingTop:'5px' }}>
-                  قیمت   : 
-                </Col>
-                <Col span={20} style={{paddingTop:'5px' }}>
+              
+              <Col span={24} style={{ fontSize:'17px' ,  fontWeight:'600' , paddingBottom:'5px'}}>
+              قیمت   :  
+              </Col>
+                 
+             </Row>
+             <Row justify="start" dir="rtl">
+               
+                <Col span={24} style={{fontSize:'17px' , color:'red', textAlign:'center' , fontWeight:'600' , paddingLeft:'40px' ,paddingBottom:'5px' }}>
                    90,000 تومان
                 </Col>
              </Row>
@@ -108,12 +130,12 @@ const Pool = () => {
                  
                 </Col>
                 <Col span={20} style={{paddingTop:'5px' }}>
-                <Button type="primary"    style={{  width:'45%' , background:'green' , marginTop:'15px', fontSize:'13px'}}>
+                <Button type="primary"  size="large"   style={{  width:'45%' , fontWeight:'600' , background:'green' , marginTop:'15px', marginBottom:'10px', fontSize:'15px'}}>
                    رزرو بلیط
                 </Button>
                 </Col>
              </Row>
-             
+             <br />
            </div>
           
         </>
