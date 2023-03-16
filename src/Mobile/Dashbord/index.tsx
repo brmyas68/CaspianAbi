@@ -44,11 +44,16 @@ const Dashbord = () => {
 
          <Header/>
 
-         <div style={{display:'flex' , justifyContent:'center' , marginTop:'120px' , fontFamily:'tahoma', fontSize:'14px'}}>
-            کاسپین آبی خوش آمدید
+         <div style={{display:'flex' ,     justifyContent:'center' , marginTop:'120px' ,}}>
+           <div style={{ fontWeight:'600',  fontFamily:'tahoma', fontSize:'15px'}}>  به مجموعه ورزشی کاسپین آبی رفاه خوش آمدید </div>
             <br />
-           
+            <div style={{ fontWeight:'600',  fontFamily:'tahoma', fontSize:'12px'}}> آدرس: ساری - بلوار آزادی، خيابان رفاه،كوچه رفاه سوم</div>
+         <br />
+         <div style={{ fontWeight:'600',  fontFamily:'tahoma', fontSize:'12px'}}>
+             با شماره تماس : 01133350400
          </div>
+       
+        </div>
                 
         <div className='fixedbutton'>
             <Segmented
@@ -159,8 +164,8 @@ const Dashbord = () => {
                             label: (
                                 <div
                                 style={{
-                                    padding: 2,
-                                  
+                                    padding: 1,
+                                    paddingTop:2,
                                     fontSize:'12px',
                                     textAlign:'right',
                                     fontWeight:'600'
