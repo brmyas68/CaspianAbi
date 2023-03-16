@@ -58,7 +58,7 @@ const Pool = () => {
                     style={{
                         fontFamily:'tahoma',
                         fontSize:'14px', fontWeight:'600' ,
-                        width:'85%',
+                        width:'82%',
                         height:'40px'
                     }}
                     containerStyle={{
@@ -130,7 +130,7 @@ const Pool = () => {
                  
                 </Col>
                 <Col span={20} style={{paddingTop:'5px' }}>
-                <Button type="primary"  size="large"   style={{  width:'45%' , fontWeight:'600' , background:'green' , marginTop:'15px', marginBottom:'10px', fontSize:'15px'}}>
+                <Button type="primary"  size="large"   style={{  width:'47%' , fontWeight:'600' , background:'green' , marginTop:'15px', marginBottom:'10px', fontSize:'15px'}}>
                    رزرو بلیط
                 </Button>
                 </Col>
