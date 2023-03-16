@@ -44,14 +44,14 @@ const Dashbord = () => {
 
          <Header/>
 
-         <div style={{display:'flex' ,     justifyContent:'center' , marginTop:'120px' ,}}>
-           <div style={{ fontWeight:'600',  fontFamily:'tahoma', fontSize:'15px'}}>  به مجموعه ورزشی کاسپین آبی رفاه خوش آمدید </div>
+         <div style={{display:'flex' , textAlign:'right' ,marginRight:'15%' ,  flexDirection:'column'  ,  justifyContent:'center' , marginTop:'120px' ,}}>
+           <div style={{ fontWeight:'600',  fontFamily:'tahoma', fontSize:'15px'}}> (( به مجموعه ورزشی کاسپین آبی   خوش آمدید ))</div>
+            <br /> <br />
+            <div style={{  marginRight:'5%' ,fontFamily:'tahoma', fontSize:'12px'}}> آدرس: ساری - بلوار آزادی، خيابان رفاه،كوچه رفاه سوم</div>
             <br />
-            <div style={{ fontWeight:'600',  fontFamily:'tahoma', fontSize:'12px'}}> آدرس: ساری - بلوار آزادی، خيابان رفاه،كوچه رفاه سوم</div>
-         <br />
-         <div style={{ fontWeight:'600',  fontFamily:'tahoma', fontSize:'12px'}}>
-             با شماره تماس : 01133350400
-         </div>
+            <div style={{  marginRight:'5%' , fontFamily:'tahoma', fontSize:'12px'}}>
+                  شماره تماس : 01133350400
+            </div>
        
         </div>
                 
