@@ -96,7 +96,7 @@ const Register =() => {
                 <Row justify="start" dir="rtl">
                     
                     <Col span={24} >
-                        <Button onClick={F_Register} size="large" type="primary" block  style={{ background:'green' , width:'100%', marginTop:'12px' , fontWeight:'600'}} >   عضویت در کاسپین آبی   </Button>
+                        <Button onClick={F_Register} size="large" type="primary" block  style={{   width:'100%', marginTop:'12px' , fontWeight:'600'}} >   عضویت در کاسپین آبی   </Button>
                     </Col>
                         
                 </Row>
