@@ -68,21 +68,27 @@ const Boling = () => {
            <br /> <br /> <br /><br />
 
            <div style={{marginRight:'20%'}}>
-             <Row justify="start" dir="rtl">
-                <Col span={4} style={{paddingTop:'5px'}}>
+           <Row justify="start" dir="rtl">
+              
+              <Col span={24} style={{ fontSize:'17px' ,  fontWeight:'600' , paddingBottom:'5px'}}>
                   تاریخ : 
-                </Col>
-                <Col  span={20}>
+              </Col>
+                 
+            </Row>
+             <Row justify="start" dir="rtl">
+                
+                <Col  span={24}>
                 <DatePicker 
                     style={{
-                        fontFamily:'tahoma',
-                        fontSize:'12px',
-                        width:'99%'
-                    }}
-                    containerStyle={{
-                        fontFamily:'tahoma',
-                        fontSize:'12px'
-                    }}
+                      fontFamily:'tahoma',
+                      fontSize:'14px', fontWeight:'600' ,
+                      width:'80%',
+                      height:'40px'
+                  }}
+                  containerStyle={{
+                      fontFamily:'tahoma',
+                      fontSize:'14px', fontWeight:'600' ,
+                  }}
                     className="green"
                     weekDays={weekDays}
                     format={"YYYY/MM/DD"}
@@ -94,16 +100,21 @@ const Boling = () => {
              </Row>
              <br />
              <Row justify="start" dir="rtl">
-                <Col span={4} style={{paddingTop:'5px' }}>
-                  ست  : 
-                </Col>
-                <Col span={20}>
+              
+              <Col span={24} style={{ fontSize:'17px' ,  fontWeight:'600' , paddingBottom:'5px'}}>
+                 ست   :  
+              </Col>
+                 
+             </Row>
+             <Row justify="start" dir="rtl">
+                
+                <Col span={24}>
                 <Select
-                        size="middle"
+                        size="large"
                         defaultValue="1"
                         
                         style={{
-                            width: 165,
+                          width: '57%',
                         }}
                         options={optionsSet}
                         placement="bottomLeft"
@@ -112,16 +123,21 @@ const Boling = () => {
              </Row>
              <br />
              <Row justify="start" dir="rtl">
-                <Col span={4} style={{paddingTop:'5px' }}>
-                  ساعت   : 
-                </Col>
-                <Col span={20}>
+              
+              <Col span={24} style={{ fontSize:'17px' ,  fontWeight:'600' , paddingBottom:'5px'}}>
+              ساعت   :  
+              </Col>
+                 
+             </Row>
+             <Row justify="start" dir="rtl">
+                
+                <Col span={24}>
                 <Select
-                        size="middle"
+                        size="large"
                         defaultValue="1"
                         
                         style={{
-                            width: 165,
+                          width: '57%',
                         }}
                         options={optionsTime}
                         placement="bottomLeft"
@@ -129,28 +145,30 @@ const Boling = () => {
                 </Col>
              </Row>
              <br />
-             
              <Row justify="start" dir="rtl">
-                <Col span={4} style={{paddingTop:'5px' }}>
-                  قیمت   : 
-                </Col>
-                <Col span={20} style={{paddingTop:'5px' }}>
-                   90,000 تومان
-                </Col>
+              
+              <Col span={24} style={{ fontSize:'17px' ,  fontWeight:'600' , paddingBottom:'5px', paddingRight:'3px'}}>
+                  قیمت   :  
+              </Col>
+                 
              </Row>
              <Row justify="start" dir="rtl">
-                <Col span={4} style={{paddingTop:'5px' }}>
-                 
-                </Col>
-                <Col span={20} style={{paddingTop:'5px' }}>
-                <Button type="primary"    style={{  width:'51%' , background:'green' , marginTop:'15px', fontSize:'13px'}}>
+               
+               <Col span={24} style={{fontSize:'17px' , color:'red', textAlign:'center' , fontWeight:'600' , paddingLeft:'60px' ,paddingBottom:'5px' }}>
+                  90,000 تومان
+               </Col>
+            </Row>
+             <Row justify="start" dir="rtl">
+              
+                <Col span={24} style={{paddingTop:'5px' }}>
+                <Button type="primary"    size="large"   style={{ width:'67%' , fontWeight:'600' , background:'green' , marginTop:'20px', marginBottom:'10px', fontSize:'15px'}}>
                    رزرو بولینگ
                 </Button>
                 </Col>
              </Row>
-             
+             <br />
            </div>
-          
+         
         </>
     );
 }
