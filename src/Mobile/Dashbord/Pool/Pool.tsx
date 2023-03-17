@@ -128,7 +128,7 @@ const Pool = () => {
              <Row justify="start" dir="rtl">
                  
                 <Col span={24} style={{paddingTop:'5px' ,  }}>
-                <Button type="primary" block  size="large"   style={{ width:'47%' , fontWeight:'600' , background:'green' , marginTop:'15px', marginBottom:'10px', fontSize:'15px'}}>
+                <Button type="primary" block  size="large"   style={{ width:'67%' , fontWeight:'600' , background:'green' , marginTop:'20px', marginBottom:'10px', fontSize:'15px'}}>
                    رزرو بلیط
                 </Button>
                 </Col>
