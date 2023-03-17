@@ -90,7 +90,7 @@ const Pool = () => {
                         defaultValue="1"
                         
                         style={{
-                            width: '57%',
+                            width: '62%',
                         }}
                         options={options}
                         placement="bottomLeft"
@@ -108,7 +108,7 @@ const Pool = () => {
              <Row justify="start" dir="rtl">
                
                 <Col span={24}>
-                    <Input size="large"  ref={inputElementCountPool} onKeyUp={(event)=>{  if ( countPool == "0") { setCountPool("1"); }    }}  onFocus={()=>{ inputElementCountPool.current?.select();   }} value={countPool}   onChange={ChangeCountPool}   min={1}  style={{textAlign:'left' , direction:'ltr' , width:'57%'}} />
+                    <Input size="large"  ref={inputElementCountPool} onKeyUp={(event)=>{  if ( countPool == "0") { setCountPool("1"); }    }}  onFocus={()=>{ inputElementCountPool.current?.select();   }} value={countPool}   onChange={ChangeCountPool}   min={1}  style={{textAlign:'left' , direction:'ltr' , width:'62%'}} />
                 </Col>
              </Row>
              <br />

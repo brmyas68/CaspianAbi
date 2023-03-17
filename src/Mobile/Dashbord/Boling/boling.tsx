@@ -114,7 +114,7 @@ const Boling = () => {
                         defaultValue="1"
                         
                         style={{
-                          width: '57%',
+                          width: '62%',
                         }}
                         options={optionsSet}
                         placement="bottomLeft"
@@ -137,7 +137,7 @@ const Boling = () => {
                         defaultValue="1"
                         
                         style={{
-                          width: '57%',
+                          width: '62%',
                         }}
                         options={optionsTime}
                         placement="bottomLeft"
