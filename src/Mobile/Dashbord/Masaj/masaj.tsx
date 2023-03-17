@@ -20,13 +20,13 @@ const Masaj =() => {
         <HeaderMsaj  /> 
          
          
-        <div style={{width:'70%', height:'100vh' , marginTop:'-40px' , marginRight:'15%', marginLeft:'15%' , justifyContent:'center' , alignContent:'center' , flexDirection:'column'  ,    display:'flex'}}>
+        <div style={{width:'90%', height:'100vh' , marginTop:'-30px' , marginRight:'5%', marginLeft:'5%' , justifyContent:'center' , alignContent:'start' , flexDirection:'column'  ,    display:'flex'}}>
              
-         <Button type="dashed" shape="default" onClick={F_MasajBodyBuilding} >
+         <Button type="dashed" style={{height:'40px', fontSize:'14px', fontWeight:'600', fontFamily:'tahoma'}} shape="default" onClick={F_MasajBodyBuilding} >
            ماساژ بدنسازی
          </Button>
             <br />
-         <Button type="dashed" shape="default">
+         <Button type="dashed" style={{height:'40px', fontSize:'14px', fontWeight:'600', fontFamily:'tahoma'}} shape="default">
            ماساژ استخر
          </Button>
          <br />
