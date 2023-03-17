@@ -44,7 +44,7 @@ const Register =() => {
                     
                     <Col span={24} >
                     <Avatar
-                            size={100}
+                            size={120}
                             src={url}
                         />
                     </Col>
