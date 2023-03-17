@@ -38,7 +38,7 @@ const Register =() => {
        
     return (
         <>
-        <div style={{height:'100vh' , width:'100%' , marginTop:'20px' , display:'flex', flexDirection:'column',alignItems:'center' , }}>
+        <div style={{height:'100vh' , width:'100%' , marginTop:'50px' , display:'flex', flexDirection:'column',alignItems:'center' , }}>
                 <input accept="image/*"  onChange={ handleImageUpload} ref={inputFile}  type="file" id="file" style={{display: "none"}}/>
                 <Row justify="start" dir="rtl">
                     
