@@ -20,17 +20,17 @@ const Bofe =() => {
         <HeaderBofe  /> 
          
          
-        <div style={{width:'90%', height:'100vh' , marginTop:'-30px' , marginRight:'5%', marginLeft:'5%' , justifyContent:'center' , alignContent:'start' , flexDirection:'column'  ,    display:'flex'}}>
+        <div style={{width:'90%', height:'100vh' , marginTop:'20px' , marginRight:'5%', marginLeft:'5%' , justifyContent:'start' , alignContent:'start' , flexDirection:'column'  ,    display:'flex'}}>
              
-         <Button type="dashed" style={{height:'40px', fontSize:'14px', fontWeight:'600', fontFamily:'tahoma'}} shape="default" onClick={F_BofeBodyBuilding} >
+         <Button type="dashed" style={{height:'50px', fontSize:'15px', fontWeight:'600', fontFamily:'tahoma'}} shape="default" onClick={F_BofeBodyBuilding} >
            بوفه بدنسازی
          </Button>
             <br />
-         <Button type="dashed" style={{height:'40px', fontSize:'14px', fontWeight:'600', fontFamily:'tahoma'}} shape="default">
+         <Button type="dashed" style={{height:'50px', fontSize:'15px', fontWeight:'600', fontFamily:'tahoma'}} shape="default">
            بوفه استخر
          </Button>
          <br />
-         <Button type="dashed" style={{height:'40px', fontSize:'14px', fontWeight:'600', fontFamily:'tahoma'}} shape="default">
+         <Button type="dashed" style={{height:'50px', fontSize:'154px', fontWeight:'600', fontFamily:'tahoma'}} shape="default">
            بوفه بولینگ
          </Button>
 
