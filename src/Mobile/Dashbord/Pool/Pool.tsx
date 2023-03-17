@@ -59,7 +59,7 @@ const Pool = () => {
                         fontFamily:'tahoma',
                         fontSize:'14px', fontWeight:'600' ,
                         width:'80%',
-                        height:'40px'
+                        height:'38px'
                     }}
                     containerStyle={{
                         fontFamily:'tahoma',
@@ -90,7 +90,7 @@ const Pool = () => {
                         defaultValue="1"
                         
                         style={{
-                            width: '60%',
+                            width: '60.5%',
                         }}
                         options={options}
                         placement="bottomLeft"
@@ -108,7 +108,7 @@ const Pool = () => {
              <Row justify="start" dir="rtl">
                
                 <Col span={24}>
-                    <Input size="large"  ref={inputElementCountPool} onKeyUp={(event)=>{  if ( countPool == "0") { setCountPool("1"); }    }}  onFocus={()=>{ inputElementCountPool.current?.select();   }} value={countPool}   onChange={ChangeCountPool}   min={1}  style={{textAlign:'left' , direction:'ltr' , width:'60%'}} />
+                    <Input size="large"  ref={inputElementCountPool} onKeyUp={(event)=>{  if ( countPool == "0") { setCountPool("1"); }    }}  onFocus={()=>{ inputElementCountPool.current?.select();   }} value={countPool}   onChange={ChangeCountPool}   min={1}  style={{textAlign:'left' , direction:'ltr' , width:'60.5%'}} />
                 </Col>
              </Row>
              <br />

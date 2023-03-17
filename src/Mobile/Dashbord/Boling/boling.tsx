@@ -83,7 +83,7 @@ const Boling = () => {
                       fontFamily:'tahoma',
                       fontSize:'14px', fontWeight:'600' ,
                       width:'80%',
-                      height:'40px'
+                      height:'38px'
                   }}
                   containerStyle={{
                       fontFamily:'tahoma',
@@ -114,7 +114,7 @@ const Boling = () => {
                         defaultValue="1"
                         
                         style={{
-                          width: '60%',
+                          width: '60.5%',
                         }}
                         options={optionsSet}
                         placement="bottomLeft"
@@ -137,7 +137,7 @@ const Boling = () => {
                         defaultValue="1"
                         
                         style={{
-                          width: '60%',
+                          width: '60.5%',
                         }}
                         options={optionsTime}
                         placement="bottomLeft"
