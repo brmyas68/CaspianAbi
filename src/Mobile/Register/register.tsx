@@ -43,10 +43,19 @@ const Register =() => {
                 <Row justify="start" dir="rtl">
                     
                     <Col span={24} >
-                    <Avatar
+                        {
+                            url ? 
+                            <Avatar
                             size={120}
                             src={url}
                         />
+                        :
+                        <Avatar
+                        size={120}
+                        icon={<UserOutlined/>}
+                    />
+                        }
+                    
                     </Col>
                         
                 </Row>
