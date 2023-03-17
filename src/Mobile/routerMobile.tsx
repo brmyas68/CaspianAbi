@@ -11,6 +11,7 @@ import MasajBodyBuilding from "./Dashbord/Masaj/masajBodyBuilding";
 import Pool from "./Dashbord/Pool/Pool";
 import Resturan from "./Dashbord/Resturan/resturan";
 import Login from "./Login/loginMobile";
+import Register from "./Register/register";
  
  
 
@@ -20,7 +21,8 @@ const RouterMobile =() =>{
         <div>
  
             <Routes>
-                <Route   path="/" element={<Login/>} />
+                <Route path="/" element={<Login/>} />
+                <Route path="register" element={<Register/>} />
                 <Route path="dashbord" element={<Dashbord/>} />
                 <Route path="resturan" element={<Resturan/>} />
                 <Route path="cafe" element={<Cafe/>} />

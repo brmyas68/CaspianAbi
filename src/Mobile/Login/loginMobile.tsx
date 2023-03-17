@@ -79,7 +79,7 @@ const Login =()=>{
       const F_Login =() =>{
         if(mobile !="" && activeCode1 !="" && activeCode2 !=""&& activeCode3 !=""&& activeCode4 !=""&& activeCode5 !=""){
          
-          navigate('/dashbord');
+          navigate('/register');
         }
       }
       
