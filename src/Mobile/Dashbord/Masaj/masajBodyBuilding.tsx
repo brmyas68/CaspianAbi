@@ -1,7 +1,7 @@
 import HeaderMasajBodyBuilding from "../Header/HeaderMasajBodyBuilding";
  
   
-import { Button,  Col,  Image, Row, Tooltip } from 'antd';
+import { Button,  Card,  Col,  Image, Row, Tooltip } from 'antd';
  
  
  
@@ -15,75 +15,90 @@ const MasajBodyBuilding =() => {
         <HeaderMasajBodyBuilding  /> 
         <br /> <br /> <br />
        
-           <div style={{marginRight:'1%' , marginLeft:'1%' }}>
-             <Row justify="start" dir="rtl" style={{border:'1px dashed #cccccc ' ,height:'50px' , borderRadius:'5px'}}>
-                <Col span={10}  style={{ textAlign:'right' , marginTop:'11px', paddingRight:'10px' }}>
-                    تایلندی کل بدن
-                </Col>
-                <Col  span={3}  style={{ textAlign:'right' , marginTop:'11px', fontSize:'13px' }}>
-                    45 دقیقه
-                </Col>
-                <Col  span={6}  style={{ textAlign:'center' , marginTop:'11px',  fontSize:'13px' }}>
-                 200,000 تومان
-                </Col>
-                <Col  span={5}  style={{ textAlign:'center' , marginTop:'7px',  }}>
-                 <Button type="primary"    style={{ height:'30px' ,   width:'80%' , background:'green' ,   fontSize:'12px'}}>
-                     رزرو  ماساژ
-                </Button>
-                </Col>
-             </Row>
+           <div style={{marginRight:'1%' , marginLeft:'1%' , marginTop:'20px', }}>
+
+               <div
+                    
+                    style={{
+                      width: '100%',
+                     
+                      border:'1px dashed #d5d2d2',
+                      borderRadius:'5px',
+                      boxShadow : '1px 1px -3px 1px rgba(0, 0, 0, 0.2)',
+                    }}
+                >
+                 <Row justify="start" dir="rtl">
+                    <Col span={24}  style={{ textAlign:'center' ,  fontSize:'15px' , color:'#170602' ,  fontFamily:'tahoma', fontWeight:'600', marginTop:'15px', paddingRight:'0px'  }}>
+                        ماساژ تایلندی کل بدن  
+                    </Col>
+                 </Row>
+                 <br />
+                 <Row justify="start" dir="rtl">
+                    <Col span={7}  style={{ textAlign:'center' ,  fontSize:'13px' , color:'#bab4b5' ,  fontFamily:'tahoma', fontWeight:'600', marginTop:'10px', paddingRight:'0px'  }}>
+                      مدت زمان ماساژ:   
+                    </Col>
+                    <Col span={5}  style={{ textAlign:'right' ,  fontSize:'13px' , color:'#170602' ,  fontFamily:'tahoma', fontWeight:'600', marginTop:'10px', paddingRight:'0px'  }}>
+                        45 دقیقه
+                    </Col>
+                    <Col span={6}  style={{ textAlign:'center' ,  fontSize:'13px' , color:'#bab4b5' ,  fontFamily:'tahoma', fontWeight:'600', marginTop:'10px', paddingRight:'0px'  }}>
+                        هزینه ماساژ :
+                    </Col>
+                    <Col span={5}  style={{ textAlign:'right' ,  fontSize:'13px' , color:'#170602' ,  fontFamily:'tahoma', fontWeight:'600', marginTop:'10px', paddingRight:'0px'  }}>
+                        45000 تومان  
+                    </Col>
+                 </Row>
+                <Row>
+                        <Col  span={24}  style={{ textAlign:'center' , marginTop:'20px', marginBottom:'15px' }}>
+                            <Button type="primary" block   style={{  fontSize:'15px' , fontWeight:'600', height:'35px' ,   width:'90%' , background:'green' ,    }}>
+                                رزرو  ماساژ
+                            </Button>
+                        </Col>
+                </Row>
+                </div>
+ 
              <br />
-             <Row justify="start" dir="rtl" style={{border:'1px dashed #cccccc ' ,height:'50px' , borderRadius:'5px'}}>
-                <Col span={10}  style={{ textAlign:'right' , marginTop:'11px', paddingRight:'10px' }}>
-                ماساژ درمانی بادکش گرم 
-                </Col>
-                <Col  span={3}  style={{ textAlign:'right' , marginTop:'11px', fontSize:'13px' }}>
-                    45 دقیقه
-                </Col>
-                <Col  span={6}  style={{ textAlign:'center' , marginTop:'11px',  fontSize:'13px' }}>
-                 250,000 تومان
-                </Col>
-                <Col  span={5}  style={{ textAlign:'center' , marginTop:'7px',  }}>
-                 <Button type="primary"    style={{ height:'30px' ,   width:'80%' , background:'green' ,   fontSize:'12px'}}>
-                     رزرو  ماساژ
-                </Button>
-                </Col>
-             </Row>
+
+             <div
+                    
+                    style={{
+                      width: '100%',
+                     
+                      border:'1px dashed #d5d2d2',
+                      borderRadius:'5px',
+                      boxShadow : '1px 1px -3px 1px rgba(0, 0, 0, 0.2)',
+                    }}
+                >
+                 <Row justify="start" dir="rtl">
+                    <Col span={24}  style={{ textAlign:'center' ,  fontSize:'15px' , color:'#170602' ,  fontFamily:'tahoma', fontWeight:'600', marginTop:'15px', paddingRight:'0px'  }}>
+                    ماساژ   کل بدن  با بادکش    
+                    </Col>
+                 </Row>
+                 <br />
+                 <Row justify="start" dir="rtl">
+                    <Col span={7}  style={{ textAlign:'center' ,  fontSize:'13px' , color:'#bab4b5' ,  fontFamily:'tahoma', fontWeight:'600', marginTop:'10px', paddingRight:'0px'  }}>
+                      مدت زمان ماساژ:   
+                    </Col>
+                    <Col span={5}  style={{ textAlign:'right' ,  fontSize:'13px' , color:'#170602' ,  fontFamily:'tahoma', fontWeight:'600', marginTop:'10px', paddingRight:'0px'  }}>
+                        40 دقیقه
+                    </Col>
+                    <Col span={6}  style={{ textAlign:'center' ,  fontSize:'13px' , color:'#bab4b5' ,  fontFamily:'tahoma', fontWeight:'600', marginTop:'10px', paddingRight:'0px'  }}>
+                        هزینه ماساژ :
+                    </Col>
+                    <Col span={5}  style={{ textAlign:'right' ,  fontSize:'13px' , color:'#170602' ,  fontFamily:'tahoma', fontWeight:'600', marginTop:'10px', paddingRight:'0px'  }}>
+                        40000 تومان  
+                    </Col>
+                 </Row>
+                <Row>
+                        <Col  span={24}  style={{ textAlign:'center' , marginTop:'20px', marginBottom:'15px' }}>
+                            <Button type="primary" block   style={{  fontSize:'15px' , fontWeight:'600', height:'35px' ,   width:'90%' , background:'green' ,    }}>
+                                رزرو  ماساژ
+                            </Button>
+                        </Col>
+                </Row>
+                </div>
+ 
              <br />
-             <Row justify="start" dir="rtl" style={{border:'1px dashed #cccccc ' ,height:'50px' , borderRadius:'5px'}}>
-                <Col span={10}  style={{ textAlign:'right' , marginTop:'11px', paddingRight:'10px' }}>
-                ریلکسینگ و رایحه درمانی
-                </Col>
-                <Col  span={3}  style={{ textAlign:'right' , marginTop:'11px', fontSize:'13px' }}>
-                    45 دقیقه
-                </Col>
-                <Col  span={6}  style={{ textAlign:'center' , marginTop:'11px',  fontSize:'13px' }}>
-                 220,000 تومان
-                </Col>
-                <Col  span={5}  style={{ textAlign:'center' , marginTop:'7px',  }}>
-                 <Button type="primary"    style={{ height:'30px' ,   width:'80%' , background:'green' ,   fontSize:'12px'}}>
-                     رزرو  ماساژ
-                </Button>
-                </Col>
-             </Row>
-             <br />
-             <Row justify="start" dir="rtl" style={{border:'1px dashed #cccccc ' ,height:'50px' , borderRadius:'5px'}}>
-                <Col span={10}  style={{ textAlign:'right' , marginTop:'11px', paddingRight:'10px' }}>
-                ماساژ درمانی
-                </Col>
-                <Col  span={3}  style={{ textAlign:'right' , marginTop:'11px', fontSize:'13px' }}>
-                    45 دقیقه
-                </Col>
-                <Col  span={6}  style={{ textAlign:'center' , marginTop:'11px',  fontSize:'13px' }}>
-                 120,000 تومان
-                </Col>
-                <Col  span={5}  style={{ textAlign:'center' , marginTop:'7px',  }}>
-                 <Button type="primary"    style={{ height:'30px' ,   width:'80%' , background:'green' ,   fontSize:'12px'}}>
-                     رزرو  ماساژ
-                </Button>
-                </Col>
-             </Row>
-             <br />
+             
            </div>
           
        
