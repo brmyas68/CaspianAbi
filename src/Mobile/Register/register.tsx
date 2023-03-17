@@ -4,9 +4,24 @@ import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Register =() => {
-
+    const inputFile = useRef<HTMLInputElement | null>(null);
     const inputElementCodeMeli = useRef<InputRef | null>(null);
     const [codeMeli, setCodeMeli] = useState("");
+   // const [imageUrl, setImageUrl] = useState<File | null>(null);
+    const [url, setUrl] = useState("");
+   
+    const handleImageUpload = (evt: React.ChangeEvent<HTMLInputElement>) => {
+        if (evt.target.files != null) {
+           
+         //   var reader = new FileReader();
+          //  const urlimage = reader.readAsDataURL(evt.target.files[0]);
+            setUrl(URL.createObjectURL(evt.target.files[0]));
+        }
+      };
+
+    const F_SelectFile= () =>{
+        inputFile.current!.click();
+      }
 
     const ChangeMobile = (e:any) => {
         const regex = /^[0-9\b]+$/;
@@ -20,17 +35,17 @@ const Register =() => {
       const F_Register= () =>{
         navigate('/dashbord');
       }
-      
+       
     return (
         <>
         <div style={{height:'100vh' , width:'100%' , marginTop:'20px' , display:'flex', flexDirection:'column',alignItems:'center' , }}>
-
+                <input accept="image/*"  onChange={ handleImageUpload} ref={inputFile}  type="file" id="file" style={{display: "none"}}/>
                 <Row justify="start" dir="rtl">
                     
                     <Col span={24} >
                     <Avatar
                             size={100}
-                            icon={<UserOutlined />}
+                            src={url}
                         />
                     </Col>
                         
@@ -39,7 +54,7 @@ const Register =() => {
                 <Row justify="start" dir="rtl">
                     
                     <Col span={24} >
-                       <Button   icon={<UploadOutlined  />}>انتخاب عکس</Button>
+                       <Button  onClick={F_SelectFile}  icon={<UploadOutlined  />}>انتخاب عکس</Button>
                     </Col>
                         
                 </Row>
