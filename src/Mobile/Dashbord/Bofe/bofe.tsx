@@ -20,7 +20,7 @@ const Bofe =() => {
         <HeaderBofe  /> 
          
          
-        <div style={{width:'70%', height:'100vh' , marginTop:'-70px' , marginRight:'5%', marginLeft:'5%' , justifyContent:'center' , alignContent:'center' , flexDirection:'column'  ,    display:'flex'}}>
+        <div style={{width:'90%', height:'100vh' , marginTop:'40px' , marginRight:'5%', marginLeft:'5%' , justifyContent:'center' , alignContent:'start' , flexDirection:'column'  ,    display:'flex'}}>
              
          <Button type="dashed" style={{height:'40px', fontSize:'14px', fontWeight:'600', fontFamily:'tahoma'}} shape="default" onClick={F_BofeBodyBuilding} >
            بوفه بدنسازی
