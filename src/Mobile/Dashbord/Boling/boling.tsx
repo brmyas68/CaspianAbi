@@ -161,7 +161,7 @@ const Boling = () => {
              <Row justify="start" dir="rtl">
               
                 <Col span={24} style={{paddingTop:'5px' }}>
-                <Button type="primary"    size="large"   style={{ width:'67%' , fontWeight:'600' , background:'green' , marginTop:'20px', marginBottom:'10px', fontSize:'15px'}}>
+                <Button type="primary"    size="large"   style={{ width:'62%' , fontWeight:'600' , background:'green' , marginTop:'20px', marginBottom:'10px', fontSize:'15px'}}>
                    رزرو بولینگ
                 </Button>
                 </Col>
