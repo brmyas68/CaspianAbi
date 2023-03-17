@@ -60,7 +60,7 @@ const  BodyBuilding =() =>{
                  800,000 تومان
                 </Col>
                 <Col  span={8}  style={{ textAlign:'center' , marginTop:'10px',  }}>
-                 <Button type="primary"    style={{ height:'30px' ,   width:'80' , fontWeight:'600',background:'green' ,   fontSize:'12px'}}>
+                 <Button type="primary"    style={{ height:'30px' ,   width:'80%' , fontWeight:'600',background:'green' ,   fontSize:'12px'}}>
                      خرید اشتراک
                 </Button>
                 </Col>

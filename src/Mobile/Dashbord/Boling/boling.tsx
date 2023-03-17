@@ -67,7 +67,7 @@ const Boling = () => {
            <HeaderBoling  /> 
            <br /> <br /> <br /><br />
 
-           <div style={{marginRight:'20%'}}>
+           <div style={{marginRight:'25%'}}>
            <Row justify="start" dir="rtl">
               
               <Col span={24} style={{ fontSize:'17px' ,  fontWeight:'600' , paddingBottom:'5px'}}>
