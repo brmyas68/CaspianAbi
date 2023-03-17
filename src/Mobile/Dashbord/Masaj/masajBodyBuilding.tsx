@@ -15,7 +15,7 @@ const MasajBodyBuilding =() => {
         <HeaderMasajBodyBuilding  /> 
         <br /> <br /> <br />
        
-           <div style={{marginRight:'1%' , marginLeft:'1%' , marginTop:'20px', }}>
+           <div style={{marginRight:'2%' , marginLeft:'2%' , marginTop:'30px', }}>
 
                <div
                     
