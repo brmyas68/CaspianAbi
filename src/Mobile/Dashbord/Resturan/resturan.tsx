@@ -23,53 +23,53 @@ const Resturan =() => {
  
     const items = [
       <div className="item" data-value="1"  style={{ textAlign:'center', marginRight:'3px' }}>
-         <Button block type="dashed"  style={{padding: '0px' , fontSize:'11px'}} >
+         <Button block type="dashed"  style={{height:'35px', fontWeight:'600',padding: '0px' , fontSize:'11px'}} >
           پیش غذاها 
         </Button>
     </div>,
       <div className="item" data-value="2"  style={{  marginRight:'3px' }}>
-         <Button  block  type="dashed" style={{ padding: '0px' ,  fontSize:'11px'}} >
+         <Button  block  type="dashed" style={{height:'35px', fontWeight:'600', padding: '0px' ,  fontSize:'11px'}} >
          پیش غذاهای فرنگی
         </Button>
       </div>,
       <div className="item" data-value="3" style={{ textAlign:'center', marginRight:'3px' }}>
-        <Button block type="dashed" style={{ padding: '0px' , fontSize:'11px'}} >
+        <Button block type="dashed" style={{height:'35px', fontWeight:'600', padding: '0px' , fontSize:'11px'}} >
         سالادها
         </Button>
       </div>,
       <div className="item" data-value="4" style={{ textAlign:'center', marginRight:'3px' }}>
-         <Button block type="dashed" style={{ padding: '0px' , fontSize:'11px'}} >
+         <Button block type="dashed" style={{height:'35px', fontWeight:'600', padding: '0px' , fontSize:'11px'}} >
           غذای اصلی
          </Button>
       </div>,
       <div className="item" data-value="5"  style={{  textAlign:'center', marginRight:'3px' }}>
-          <Button block type="dashed" style={{ padding: '0px' ,fontSize:'11px'}}  >
+          <Button block type="dashed" style={{height:'35px', fontWeight:'600', padding: '0px' ,fontSize:'11px'}}  >
          سینی‌ها
         </Button>
       </div>,
        <div className="item" data-value="6"  style={{ textAlign:'center', marginRight:'3px' }}>
-           <Button block type="dashed"  style={{padding: '0px' , fontSize:'11px'}}>
+           <Button block type="dashed"  style={{height:'35px', fontWeight:'600',padding: '0px' , fontSize:'11px'}}>
           خوراک ها
            </Button>
       </div>,
        <div className="item" data-value="7"  style={{ textAlign:'center', marginRight:'3px' }}>
-        <Button block type="dashed"  style={{ padding: '0px' ,fontSize:'11px'}}>
+        <Button block type="dashed"  style={{height:'35px', fontWeight:'600', padding: '0px' ,fontSize:'11px'}}>
         چلوها
         </Button>
       </div>,
 
       <div className="item" data-value="8"  style={{ textAlign:'center', marginRight:'3px' }}>
-        <Button block type="dashed"  style={{padding: '0px' ,fontSize:'11px'}}>
+        <Button block type="dashed"  style={{height:'35px', fontWeight:'600',padding: '0px' ,fontSize:'11px'}}>
         دیزی
         </Button>
       </div>,
       <div className="item" data-value="9"  style={{ textAlign:'center', marginRight:'3px' }}>
-        <Button block type="dashed"  style={{ padding: '0px' ,fontSize:'11px'}}>
+        <Button block type="dashed"  style={{height:'35px', fontWeight:'600', padding: '0px' ,fontSize:'11px'}}>
         غذای مخصوص
         </Button>
       </div>,
       <div className="item" data-value="10"  style={{ textAlign:'center', marginRight:'3px' }}>
-        <Button block type="dashed"   style={{  padding: '0px' ,fontSize:'11px'}}>
+        <Button block type="dashed"   style={{  height:'35px', fontWeight:'600',padding: '0px' ,fontSize:'11px'}}>
         نوشیدنی ها
         </Button>
       </div>,

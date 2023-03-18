@@ -21,22 +21,22 @@ const BofeBodyBuilding =() => {
    
 const items = [
   <div className="item" data-value="1"  style={{ textAlign:'center', marginRight:'3px' }}>
-     <Button block type="dashed"  style={{padding: '0px' , fontSize:'11px'}} >
+     <Button block type="dashed"  style={{height:'35px', fontWeight:'600',padding: '0px' , fontSize:'11px'}} >
      استیک
     </Button>
 </div>,
   <div className="item" data-value="2"  style={{  marginRight:'3px' }}>
-     <Button  block  type="dashed" style={{ padding: '0px' ,  fontSize:'11px'}} >
+     <Button  block  type="dashed" style={{height:'35px', fontWeight:'600', padding: '0px' ,  fontSize:'11px'}} >
      غذای ایرانی
     </Button>
   </div>,
   <div className="item" data-value="3" style={{ textAlign:'center', marginRight:'3px' }}>
-    <Button block type="dashed" style={{ padding: '0px' , fontSize:'11px'}} >
+    <Button block type="dashed" style={{height:'35px', fontWeight:'600', padding: '0px' , fontSize:'11px'}} >
     سالاد
     </Button>
   </div>,
   <div className="item" data-value="4" style={{ textAlign:'center', marginRight:'3px' }}>
-     <Button block type="dashed" style={{ padding: '0px' , fontSize:'11px'}} >
+     <Button block type="dashed" style={{height:'35px', fontWeight:'600', padding: '0px' , fontSize:'11px'}} >
      نوشیدنی
      </Button>
   </div>,
