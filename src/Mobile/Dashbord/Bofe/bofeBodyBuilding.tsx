@@ -1,9 +1,5 @@
 import HeaderBofeBodyBuilding from "../Header/HeaderBofeBodyBuilding";
  
-import Slider from "react-slick";
- 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { Button,  Image, Tooltip } from 'antd';
  
 import bofe1 from "../../images/bofe/bofe1.jpg";
@@ -11,52 +7,61 @@ import bofe2 from "../../images/bofe/bofe2.jpg";
 import bofe3 from "../../images/bofe/bofe3.jpg";
 import bofe4 from "../../images/bofe/bofe4.jpg";
  
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
+
 const BofeBodyBuilding =() => {
    
-    var settings = {
-        
-       
-        speed: 300,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-       
-      };
-     
+  const responsive = {
+    0: { items: 5 },
+    568: { items: 5 },
+    1024: { items: 5 },
+};
+
+   
+const items = [
+  <div className="item" data-value="1"  style={{ textAlign:'center', marginRight:'3px' }}>
+     <Button block type="dashed"  style={{padding: '0px' , fontSize:'11px'}} >
+     استیک
+    </Button>
+</div>,
+  <div className="item" data-value="2"  style={{  marginRight:'3px' }}>
+     <Button  block  type="dashed" style={{ padding: '0px' ,  fontSize:'11px'}} >
+     غذای ایرانی
+    </Button>
+  </div>,
+  <div className="item" data-value="3" style={{ textAlign:'center', marginRight:'3px' }}>
+    <Button block type="dashed" style={{ padding: '0px' , fontSize:'11px'}} >
+    سالاد
+    </Button>
+  </div>,
+  <div className="item" data-value="4" style={{ textAlign:'center', marginRight:'3px' }}>
+     <Button block type="dashed" style={{ padding: '0px' , fontSize:'11px'}} >
+     نوشیدنی
+     </Button>
+  </div>,
+    
+
+];  
       
     return(
         <>
         <HeaderBofeBodyBuilding  /> 
         <br /> <br /> <br />
-        
-        <Slider   {...settings}>
        
-      <div>
-        <Button type="dashed"  style={{ fontSize:'11px'}} >
-        استیک
-        </Button>
-      </div>
-      <div>
-         <Button type="dashed" style={{ fontSize:'11px'}} >
-         غذای ایرانی
 
-        </Button>
-      </div>
-      <div>
-        <Button type="dashed" style={{ fontSize:'11px'}} >
-        سالاد
-        </Button>
-      </div>
-      <div>
-          <Button type="dashed" style={{ fontSize:'11px'}} >
-          نوشیدنی
-         </Button>
-      </div>
-       
-     
-    </Slider>
+    <AliceCarousel
+                mouseTracking
+                items={items}
+                responsive={responsive}
+                controlsStrategy="alternate"
+                disableDotsControls={true}
+            />
+
+
 
      
-        <div style={{width:'98%', height:'100vh' ,  flexWrap:'wrap' , direction:'rtl' , marginTop:'30px' , marginBottom:'30px',  display:'inline-flex'}}>
+        <div style={{width:'98%', height:'100vh' ,  flexWrap:'wrap' , direction:'rtl' , marginTop:'10px' , marginBottom:'30px',  display:'inline-flex'}}>
             <div style={{width:'33%' , textAlign:'center', marginTop:'5px'}}>
                 <Image src={bofe1} width={120}   height={115}/>
                 <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>

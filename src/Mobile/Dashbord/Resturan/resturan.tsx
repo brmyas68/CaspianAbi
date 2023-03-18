@@ -1,9 +1,10 @@
 import HeaderResturan from "../Header/HeaderResturan";
  
-import Slider from "react-slick";
  
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
+
 import { Button,  Image, Tooltip } from 'antd';
  
 import food1 from "../../images/resturan/barg.jpg";
@@ -12,79 +13,87 @@ import food3 from "../../images/resturan/soup2.jpg";
 import food4 from "../../images/resturan/sib1.jpg";
  
 const Resturan =() => {
-   
-    var settings = {
-        
-       
-        speed: 300,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-       
-      };
-     
-      
+    
+      const responsive = {
+        0: { items: 5 },
+        568: { items: 5 },
+        1024: { items: 5 },
+    };
+
+ 
+    const items = [
+      <div className="item" data-value="1"  style={{ textAlign:'center', marginRight:'3px' }}>
+         <Button block type="dashed"  style={{padding: '0px' , fontSize:'11px'}} >
+          پیش غذاها 
+        </Button>
+    </div>,
+      <div className="item" data-value="2"  style={{  marginRight:'3px' }}>
+         <Button  block  type="dashed" style={{ padding: '0px' ,  fontSize:'11px'}} >
+         پیش غذاهای فرنگی
+        </Button>
+      </div>,
+      <div className="item" data-value="3" style={{ textAlign:'center', marginRight:'3px' }}>
+        <Button block type="dashed" style={{ padding: '0px' , fontSize:'11px'}} >
+        سالادها
+        </Button>
+      </div>,
+      <div className="item" data-value="4" style={{ textAlign:'center', marginRight:'3px' }}>
+         <Button block type="dashed" style={{ padding: '0px' , fontSize:'11px'}} >
+          غذای اصلی
+         </Button>
+      </div>,
+      <div className="item" data-value="5"  style={{  textAlign:'center', marginRight:'3px' }}>
+          <Button block type="dashed" style={{ padding: '0px' ,fontSize:'11px'}}  >
+         سینی‌ها
+        </Button>
+      </div>,
+       <div className="item" data-value="6"  style={{ textAlign:'center', marginRight:'3px' }}>
+           <Button block type="dashed"  style={{padding: '0px' , fontSize:'11px'}}>
+          خوراک ها
+           </Button>
+      </div>,
+       <div className="item" data-value="7"  style={{ textAlign:'center', marginRight:'3px' }}>
+        <Button block type="dashed"  style={{ padding: '0px' ,fontSize:'11px'}}>
+        چلوها
+        </Button>
+      </div>,
+
+      <div className="item" data-value="8"  style={{ textAlign:'center', marginRight:'3px' }}>
+        <Button block type="dashed"  style={{padding: '0px' ,fontSize:'11px'}}>
+        دیزی
+        </Button>
+      </div>,
+      <div className="item" data-value="9"  style={{ textAlign:'center', marginRight:'3px' }}>
+        <Button block type="dashed"  style={{ padding: '0px' ,fontSize:'11px'}}>
+        غذای مخصوص
+        </Button>
+      </div>,
+      <div className="item" data-value="10"  style={{ textAlign:'center', marginRight:'3px' }}>
+        <Button block type="dashed"   style={{  padding: '0px' ,fontSize:'11px'}}>
+        نوشیدنی ها
+        </Button>
+      </div>,
+
+
+  ];
+    
     return(
         <>
         <HeaderResturan  /> 
         <br /> <br /> <br />
         
-        <Slider   {...settings}>
-       
-      <div>
-        <Button type="dashed"  style={{ fontSize:'11px'}} >
-          پیش غذاها 
-        </Button>
-      </div>
-      <div>
-         <Button type="dashed" style={{ fontSize:'11px'}} >
-         پیش غذاهای فرنگی
+        
 
-        </Button>
-      </div>
-      <div>
-        <Button type="dashed" style={{ fontSize:'11px'}} >
-        سالادها
-        </Button>
-      </div>
-      <div>
-          <Button type="dashed" style={{ fontSize:'11px'}} >
-          غذای اصلی
-         </Button>
-      </div>
-      <div>
-         <Button type="dashed" style={{ fontSize:'11px'}}  >
-         سینی‌ها
-        </Button>
-      </div>
-      <div>
-      <Button type="dashed"  style={{ fontSize:'11px'}}>
-      خوراک ها
-        </Button>
-      </div>
-      <div>
-      <Button type="dashed"  style={{ fontSize:'11px'}}>
-      چلوها
-        </Button>
-      </div>
-      <div>
-      <Button type="dashed" style={{ fontSize:'11px'}} >
-      دیزی
-        </Button>
-      <Button type="dashed" style={{ fontSize:'11px'}} >
-      غذای مخصوص
-        </Button>
-      <Button type="dashed" style={{ fontSize:'11px'}} >
-      مزه غذا
-        </Button>
-      <Button type="dashed" style={{ fontSize:'11px'}} >
-      نوشیدنی ها
-        </Button>
-      </div>
-        </Slider>
+        <AliceCarousel
+                mouseTracking
+                items={items}
+                responsive={responsive}
+                controlsStrategy="alternate"
+                disableDotsControls={true}
+            />
 
 
-
-        <div style={{  height:'100vh' ,  flexWrap:'wrap' , direction:'rtl' , marginTop:'-70px' , marginBottom:'30px',  display:'inline-flex'}}>
+        <div style={{  height:'100vh' ,  flexWrap:'wrap' , direction:'rtl' , marginTop:'10px' , marginBottom:'30px',  display:'inline-flex'}}>
             <div style={{width:'33%' , textAlign:'center', marginTop:'5px'}}>
                 <Image src={food1} width={120}   height={115}/>
                 <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
