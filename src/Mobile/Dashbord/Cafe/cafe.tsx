@@ -101,7 +101,7 @@ const items = [
                 85.000  T
                 </div>
                 <div>
-                <Button type="primary"  style={{background:'green' , marginTop:'15px', fontSize:'13px'}}>
+                <Button type="primary"  style={{background:'green' , marginTop:'15px',  marginBottom:'20px', fontSize:'13px'}}>
                    سفارش
                 </Button>
                 </div>
@@ -115,7 +115,7 @@ const items = [
                 80.000  T
                 </div>
                 <div>
-                <Button type="primary"  style={{background:'green' , marginTop:'15px', fontSize:'13px'}}>
+                <Button type="primary"  style={{background:'green' , marginTop:'15px',  marginBottom:'20px', fontSize:'13px'}}>
                    سفارش
                 </Button>
                 </div>
@@ -130,7 +130,7 @@ const items = [
                    60.000  T
                 </div>
                 <div>
-                <Button type="primary"  style={{background:'green' , marginTop:'15px', fontSize:'13px'}}>
+                <Button type="primary"  style={{background:'green' , marginTop:'15px', marginBottom:'20px', fontSize:'13px'}}>
                    سفارش
                 </Button>
                 </div>
@@ -145,7 +145,7 @@ const items = [
                    95.000  T
                 </div>
                 <div>
-                <Button type="primary"  style={{background:'green' , marginTop:'15px', fontSize:'13px'}}>
+                <Button type="primary"  style={{background:'green' , marginTop:'15px',  marginBottom:'20px', fontSize:'13px'}}>
                    سفارش
                 </Button>
                 </div>

@@ -114,28 +114,28 @@ const Resturan =() => {
         <div style={{    flexWrap:'wrap' , direction:'rtl' , marginTop:'5px' , marginBottom:'30px',  display:'inline-flex'}}>
             <div style={{width:'33%' , textAlign:'center', marginTop:'15px'}}>
                 <Image src={food1} width={120}   height={115}/>
-                <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
+                <div style={{minHeight:'40px' , fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
                   کباب برگ مخصوص
                 </div>
                 <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
                    425.000 T
                 </div>
                 <div>
-                <Button type="primary"  style={{background:'green' , marginTop:'15px', fontSize:'13px'}}>
+                <Button type="primary"  style={{background:'green' , marginTop:'15px', marginBottom:'20px',  fontSize:'13px'}}>
                    سفارش
                 </Button>
                 </div>
             </div>
             <div style={{width:'33%', textAlign:'center', marginTop:'15px' }}>
                 <Image src={food2} width={120}   height={115}/>
-                <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
+                <div style={{minHeight:'40px' ,fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
                    سالاد سزار با مرغ سوخاری
                 </div>
                 <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
                    260.000 T
                 </div>
                 <div>
-                <Button type="primary"  style={{background:'green' , marginTop:'15px', fontSize:'13px'}}>
+                <Button type="primary"  style={{background:'green' , marginTop:'15px',  marginBottom:'20px', fontSize:'13px'}}>
                    سفارش
                 </Button>
                 </div>
@@ -143,14 +143,14 @@ const Resturan =() => {
 
             <div style={{width:'33%', textAlign:'center', marginTop:'15px'}}>
                 <Image src={food3} width={120}   height={115}/>
-                <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
+                <div style={{minHeight:'40px' ,fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
                 سوپ جو
                 </div>
                 <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
                    80.000  T
                 </div>
                 <div>
-                <Button type="primary"  style={{background:'green' , marginTop:'15px', fontSize:'13px'}}>
+                <Button type="primary"  style={{background:'green' , marginTop:'15px', marginBottom:'20px', fontSize:'13px'}}>
                    سفارش
                 </Button>
                 </div>
@@ -158,14 +158,14 @@ const Resturan =() => {
 
             <div style={{width:'33%', textAlign:'center', marginTop:'15px'}}>
                 <Image src={food4} width={120}   height={115}/>
-                <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
+                <div style={{minHeight:'40px' ,fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
                 سیب زمینی سرخ کرده
                 </div>
                 <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0x'}}>
                    95.000  T
                 </div>
                 <div>
-                <Button type="primary"  style={{background:'green' , marginTop:'15px', fontSize:'13px'}}>
+                <Button type="primary"  style={{background:'green' , marginTop:'15px',  marginBottom:'20px', fontSize:'13px'}}>
                    سفارش
                 </Button>
                 </div>
