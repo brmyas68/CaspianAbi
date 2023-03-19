@@ -49,6 +49,12 @@ body,html{
  
 }
 
+.alice-carousel__stage-item{
+
+    min-width: 100px;
+}
+
+
 @font-face {
     font-family: 'Vazir';
     src: local("Vazir"),

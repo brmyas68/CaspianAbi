@@ -16,14 +16,14 @@ import { CaretLeftOutlined, CaretRightOutlined   } from '@ant-design/icons';
 const ArrowL= () =>{
    return (
     <>
-       <CaretLeftOutlined  style={{fontWeight:'600'}}/>
+       <CaretLeftOutlined style={{fontWeight:'600'}}/>
     </>
    );
 }
 const ArrowR= () =>{
       return (
          <>
-            <CaretRightOutlined style={{fontWeight:'600'}}/>
+            <CaretRightOutlined  style={{fontWeight:'600'}}/>
          </>
    );
 }
@@ -105,8 +105,8 @@ const Resturan =() => {
                 responsive={responsive}
                 controlsStrategy="alternate"
                 disableDotsControls={true}
-                renderPrevButton={( )=>{return <ArrowL/>}}
-                renderNextButton={( )=>{return <ArrowR/>}}
+                renderPrevButton={( )=>{return <ArrowR/>}}
+                renderNextButton={( )=>{return <ArrowL />}}
                 
             />
 

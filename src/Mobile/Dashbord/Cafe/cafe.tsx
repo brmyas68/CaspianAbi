@@ -102,13 +102,13 @@ const items = [
                 responsive={responsive}
                 controlsStrategy="alternate"
                 disableDotsControls={true}
-                renderPrevButton={( )=>{return <ArrowL/>}}
-                renderNextButton={( )=>{return <ArrowR/>}}
+                renderPrevButton={( )=>{return <ArrowR/>}}
+                renderNextButton={( )=>{return <ArrowL />}}
             />
 
  
 
-        <div style={{width:'98%',    flexWrap:'wrap' , direction:'rtl' , marginTop:'5px' , marginBottom:'30px',  display:'inline-flex'}}>
+        <div style={{   flexWrap:'wrap' , direction:'rtl' , marginTop:'5px' , marginBottom:'30px',  display:'inline-flex'}}>
             <div style={{width:'33%' , textAlign:'center', marginTop:'15px'}}>
                 <Image src={cafe1} width={120}   height={115}/>
                 <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
