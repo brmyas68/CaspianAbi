@@ -9,7 +9,22 @@ import bofe4 from "../../images/bofe/bofe4.jpg";
  
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
+import { CaretLeftOutlined, CaretRightOutlined   } from '@ant-design/icons';
 
+const ArrowL= () =>{
+   return (
+    <>
+       <CaretLeftOutlined  style={{fontWeight:'600'}}/>
+    </>
+   );
+}
+const ArrowR= () =>{
+      return (
+         <>
+            <CaretRightOutlined style={{fontWeight:'600'}}/>
+         </>
+   );
+}
 const BofeBodyBuilding =() => {
    
   const responsive = {
@@ -56,6 +71,8 @@ const items = [
                 responsive={responsive}
                 controlsStrategy="alternate"
                 disableDotsControls={true}
+                renderPrevButton={( )=>{return <ArrowL/>}}
+                renderNextButton={( )=>{return <ArrowR/>}}
             />
 
 

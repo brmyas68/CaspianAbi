@@ -10,7 +10,22 @@ import cafe1 from "../../images/cafe/cafe1.jpg";
 import cafe2 from "../../images/cafe/cafe2.jpg";
 import cafe3 from "../../images/cafe/cafe3.jpg";
 import cafe4 from "../../images/cafe/cafe4.jpg";
- 
+import { CaretLeftOutlined, CaretRightOutlined   } from '@ant-design/icons';
+
+const ArrowL= () =>{
+   return (
+    <>
+       <CaretLeftOutlined  style={{fontWeight:'600'}}/>
+    </>
+   );
+}
+const ArrowR= () =>{
+      return (
+         <>
+            <CaretRightOutlined style={{fontWeight:'600'}}/>
+         </>
+   );
+  }
 const Cafe =() => {
    
   const responsive = {
@@ -87,6 +102,8 @@ const items = [
                 responsive={responsive}
                 controlsStrategy="alternate"
                 disableDotsControls={true}
+                renderPrevButton={( )=>{return <ArrowL/>}}
+                renderNextButton={( )=>{return <ArrowR/>}}
             />
 
  
