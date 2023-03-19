@@ -29,8 +29,8 @@ const ArrowR= () =>{
 const Cafe =() => {
    
   const responsive = {
-    0: { items: 5 },
-    568: { items: 5 },
+    0: { items: 4 },
+    568: { items: 4 },
     1024: { items: 5 },
 };
 

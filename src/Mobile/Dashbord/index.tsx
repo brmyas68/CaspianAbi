@@ -1,5 +1,5 @@
 
-import { Avatar, Segmented, Space , Drawer  } from 'antd';
+import { Avatar, Segmented, Space , Drawer, Row, Col  } from 'antd';
 
 import './dashbord.css';
 import resturan from '../icon/resturan.png';
@@ -44,15 +44,27 @@ const Dashbord = () => {
 
          <Header/>
 
-         <div style={{display:'flex' ,  flexDirection:'column'  , alignContent:'center' , justifyContent:'start' , marginTop:'120px' ,}}>
-           <div style={{ fontWeight:'600',  fontFamily:'tahoma', fontSize:'15px'}}> (( به مجموعه ورزشی کاسپین آبی   خوش آمدید ))</div>
-            <br /> <br />
+         <div style={{display:'flex' ,flexDirection:'column' , marginRight:'50%', marginLeft:'50%' ,justifyContent:'center' ,   marginTop:'120px' ,}}>
+        
+          <Row>
+            <Col span={24}>
+            <div style={{ fontWeight:'600',  fontFamily:'tahoma', fontSize:'15px'}}> (( به مجموعه ورزشی کاسپین آبی   خوش آمدید ))</div>
+            </Col>
+          </Row>
+          <Row>
+          <Col span={24}>
             <div style={{  marginRight:'5%' ,fontFamily:'tahoma', fontSize:'12px'}}> آدرس: ساری - بلوار آزادی، خيابان رفاه،كوچه رفاه سوم</div>
-            <br />
+            </Col>
+          </Row>
+          <Row>
+          <Col span={24}>
             <div style={{  marginRight:'5%' , fontFamily:'tahoma', fontSize:'12px'}}>
                   شماره تماس : 01133350400
             </div>
-       
+            </Col>
+          </Row>
+           
+           
         </div>
                 
         <div className='fixedbutton'>
