@@ -61,8 +61,8 @@ const items = [
 
 
      
-        <div style={{width:'98%', height:'100vh' ,  flexWrap:'wrap' , direction:'rtl' , marginTop:'10px' , marginBottom:'30px',  display:'inline-flex'}}>
-            <div style={{width:'33%' , textAlign:'center', marginTop:'5px'}}>
+        <div style={{width:'98%', height:'100vh' ,  flexWrap:'wrap' , direction:'rtl' , marginTop:'5px' , marginBottom:'30px',  display:'inline-flex'}}>
+            <div style={{width:'33%' , textAlign:'center', marginTop:'15px'}}>
                 <Image src={bofe1} width={120}   height={115}/>
                 <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
                 استیک مرغ (مینی)
@@ -76,7 +76,7 @@ const items = [
                 </Button>
                 </div>
             </div>
-            <div style={{width:'33%', textAlign:'center', marginTop:'5px' }}>
+            <div style={{width:'33%', textAlign:'center', marginTop:'15px' }}>
                 <Image src={bofe2} width={120}   height={115}/>
                 <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
                 استیک مرغ (رژیمی)
@@ -91,7 +91,7 @@ const items = [
                 </div>
             </div>
 
-            <div style={{width:'33%', textAlign:'center', marginTop:'5px'}}>
+            <div style={{width:'33%', textAlign:'center', marginTop:'15px'}}>
                 <Image src={bofe3} width={120}   height={115}/>
                 <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
                 دمپختک شیرازی (گیاهی)
@@ -106,7 +106,7 @@ const items = [
                 </div>
             </div>
 
-            <div style={{width:'33%', textAlign:'center', marginTop:'5px'}}>
+            <div style={{width:'33%', textAlign:'center', marginTop:'15px'}}>
                 <Image src={bofe4} width={120}   height={115}/>
                 <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
                 جوجه ترش (رژیمی) 

@@ -11,7 +11,22 @@ import food1 from "../../images/resturan/barg.jpg";
 import food2 from "../../images/resturan/salad4.jpg";
 import food3 from "../../images/resturan/soup2.jpg";
 import food4 from "../../images/resturan/sib1.jpg";
- 
+import { CaretLeftOutlined, CaretRightOutlined   } from '@ant-design/icons';
+
+const ArrowL= () =>{
+   return (
+    <>
+       <CaretLeftOutlined  style={{fontWeight:'600'}}/>
+    </>
+   );
+}
+const ArrowR= () =>{
+      return (
+         <>
+            <CaretRightOutlined style={{fontWeight:'600'}}/>
+         </>
+   );
+}
 const Resturan =() => {
     
       const responsive = {
@@ -90,11 +105,14 @@ const Resturan =() => {
                 responsive={responsive}
                 controlsStrategy="alternate"
                 disableDotsControls={true}
+                renderPrevButton={( )=>{return <ArrowL/>}}
+                renderNextButton={( )=>{return <ArrowR/>}}
+                
             />
 
 
-        <div style={{    flexWrap:'wrap' , direction:'rtl' , marginTop:'10px' , marginBottom:'30px',  display:'inline-flex'}}>
-            <div style={{width:'33%' , textAlign:'center', marginTop:'5px'}}>
+        <div style={{    flexWrap:'wrap' , direction:'rtl' , marginTop:'5px' , marginBottom:'30px',  display:'inline-flex'}}>
+            <div style={{width:'33%' , textAlign:'center', marginTop:'15px'}}>
                 <Image src={food1} width={120}   height={115}/>
                 <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
                   کباب برگ مخصوص
@@ -108,7 +126,7 @@ const Resturan =() => {
                 </Button>
                 </div>
             </div>
-            <div style={{width:'33%', textAlign:'center', marginTop:'5px' }}>
+            <div style={{width:'33%', textAlign:'center', marginTop:'15px' }}>
                 <Image src={food2} width={120}   height={115}/>
                 <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
                    سالاد سزار با مرغ سوخاری
@@ -123,7 +141,7 @@ const Resturan =() => {
                 </div>
             </div>
 
-            <div style={{width:'33%', textAlign:'center', marginTop:'5px'}}>
+            <div style={{width:'33%', textAlign:'center', marginTop:'15px'}}>
                 <Image src={food3} width={120}   height={115}/>
                 <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
                 سوپ جو
@@ -138,7 +156,7 @@ const Resturan =() => {
                 </div>
             </div>
 
-            <div style={{width:'33%', textAlign:'center', marginTop:'5px'}}>
+            <div style={{width:'33%', textAlign:'center', marginTop:'15px'}}>
                 <Image src={food4} width={120}   height={115}/>
                 <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
                 سیب زمینی سرخ کرده
