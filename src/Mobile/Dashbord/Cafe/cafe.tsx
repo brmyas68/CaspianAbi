@@ -91,7 +91,7 @@ const items = [
 
  
 
-        <div style={{width:'98%', height:'100vh' ,  flexWrap:'wrap' , direction:'rtl' , marginTop:'10px' , marginBottom:'30px',  display:'inline-flex'}}>
+        <div style={{width:'98%',    flexWrap:'wrap' , direction:'rtl' , marginTop:'10px' , marginBottom:'30px',  display:'inline-flex'}}>
             <div style={{width:'33%' , textAlign:'center', marginTop:'5px'}}>
                 <Image src={cafe1} width={120}   height={115}/>
                 <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>

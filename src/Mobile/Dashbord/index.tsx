@@ -44,7 +44,7 @@ const Dashbord = () => {
 
          <Header/>
 
-         <div style={{display:'flex' , textAlign:'right' ,marginRight:'8%' ,  flexDirection:'column'  ,  justifyContent:'center' , marginTop:'120px' ,}}>
+         <div style={{display:'flex' ,  flexDirection:'column'  , alignContent:'center' , justifyContent:'start' , marginTop:'120px' ,}}>
            <div style={{ fontWeight:'600',  fontFamily:'tahoma', fontSize:'15px'}}> (( به مجموعه ورزشی کاسپین آبی   خوش آمدید ))</div>
             <br /> <br />
             <div style={{  marginRight:'5%' ,fontFamily:'tahoma', fontSize:'12px'}}> آدرس: ساری - بلوار آزادی، خيابان رفاه،كوچه رفاه سوم</div>

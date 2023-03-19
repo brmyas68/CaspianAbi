@@ -87,7 +87,7 @@ const Register =() => {
                 <Row justify="start" dir="rtl">
                     
                     <Col span={24} >
-                       <Input ref={inputElementCodeMeli} placeholder="کد ملی" size="large" type="number" value={codeMeli}  onKeyDown={(event)=>{  if (codeMeli.length  == 11 ) {  if(event.key === 'Backspace'){} else { event.preventDefault();}} else if( event.key === 'e' || event.key === 'E' || event.key === '-' || event.key === '+'|| event.key === '.') {event.preventDefault()} }} onChange={ChangeMobile}         />
+                       <Input ref={inputElementCodeMeli} placeholder="کد ملی" size="large"  inputMode="numeric" value={codeMeli}  onKeyDown={(event)=>{  if (codeMeli.length  == 11 ) {  if(event.key === 'Backspace'){} else { event.preventDefault();}} else if( event.key === 'e' || event.key === 'E' || event.key === '-' || event.key === '+'|| event.key === '.') {event.preventDefault()} }} onChange={ChangeMobile}         />
                        
                     </Col>
                         
