@@ -42,53 +42,53 @@ const Resturan =() => {
  
     const items = [
       <div className="item" data-value="1"  style={{ textAlign:'center', marginRight:'3px' }}>
-         <Button block type="dashed"  style={{height:'35px', fontFamily:'irsans'  ,padding: '0px' , fontSize:'13px'}} >
+         <Button block type="dashed"  style={{height:'35px', fontFamily:'irsans'  ,padding: '0px' , fontSize:'12px'}} >
           پیش غذاها 
         </Button>
     </div>,
       <div className="item" data-value="2"  style={{  marginRight:'3px' }}>
-         <Button  block  type="dashed" style={{height:'35px', fontFamily:'irsans' , padding: '0px' ,  fontSize:'13px'}} >
+         <Button  block  type="dashed" style={{height:'35px', fontFamily:'irsans' , padding: '0px' ,  fontSize:'12px'}} >
          پیش غذاهای فرنگی
         </Button>
       </div>,
       <div className="item" data-value="3" style={{ textAlign:'center', marginRight:'3px' }}>
-        <Button block type="dashed" style={{height:'35px', fontFamily:'irsans' , padding: '0px' , fontSize:'13px'}} >
+        <Button block type="dashed" style={{height:'35px', fontFamily:'irsans' , padding: '0px' , fontSize:'12px'}} >
         سالادها
         </Button>
       </div>,
       <div className="item" data-value="4" style={{ textAlign:'center', marginRight:'3px' }}>
-         <Button block type="dashed" style={{height:'35px',fontFamily:'irsans' , padding: '0px' , fontSize:'13px'}} >
+         <Button block type="dashed" style={{height:'35px',fontFamily:'irsans' , padding: '0px' , fontSize:'12px'}} >
           غذای اصلی
          </Button>
       </div>,
       <div className="item" data-value="5"  style={{  textAlign:'center', marginRight:'3px' }}>
-          <Button block type="dashed" style={{height:'35px', fontFamily:'irsans' , padding: '0px' ,fontSize:'13px'}}  >
+          <Button block type="dashed" style={{height:'35px', fontFamily:'irsans' , padding: '0px' ,fontSize:'12px'}}  >
          سینی‌ها
         </Button>
       </div>,
        <div className="item" data-value="6"  style={{ textAlign:'center', marginRight:'3px' }}>
-           <Button block type="dashed"  style={{height:'35px', fontFamily:'irsans' ,padding: '0px' , fontSize:'13px'}}>
+           <Button block type="dashed"  style={{height:'35px', fontFamily:'irsans' ,padding: '0px' , fontSize:'12px'}}>
           خوراک ها
            </Button>
       </div>,
        <div className="item" data-value="7"  style={{ textAlign:'center', marginRight:'3px' }}>
-        <Button block type="dashed"  style={{height:'35px', fontFamily:'irsans' , padding: '0px' ,fontSize:'13px'}}>
+        <Button block type="dashed"  style={{height:'35px', fontFamily:'irsans' , padding: '0px' ,fontSize:'12px'}}>
         چلوها
         </Button>
       </div>,
 
       <div className="item" data-value="8"  style={{ textAlign:'center', marginRight:'3px' }}>
-        <Button block type="dashed"  style={{height:'35px', fontFamily:'irsans' ,padding: '0px' ,fontSize:'13px'}}>
+        <Button block type="dashed"  style={{height:'35px', fontFamily:'irsans' ,padding: '0px' ,fontSize:'12px'}}>
         دیزی
         </Button>
       </div>,
       <div className="item" data-value="9"  style={{ textAlign:'center', marginRight:'3px' }}>
-        <Button block type="dashed"  style={{height:'35px', fontFamily:'irsans' , padding: '0px' ,fontSize:'13px'}}>
+        <Button block type="dashed"  style={{height:'35px', fontFamily:'irsans' , padding: '0px' ,fontSize:'12px'}}>
         غذای مخصوص
         </Button>
       </div>,
       <div className="item" data-value="10"  style={{ textAlign:'center', marginRight:'3px' }}>
-        <Button block type="dashed"   style={{  height:'35px', fontFamily:'irsans' ,padding: '0px' ,fontSize:'13px'}}>
+        <Button block type="dashed"   style={{  height:'35px', fontFamily:'irsans' ,padding: '0px' ,fontSize:'12px'}}>
         نوشیدنی ها
         </Button>
       </div>,
@@ -118,10 +118,10 @@ const Resturan =() => {
         <div style={{    flexWrap:'wrap' , direction:'rtl' , marginTop:'5px' , marginBottom:'30px',  display:'inline-flex'}}>
             <div style={{width:'33%' , textAlign:'center', marginTop:'15px'}}>
                 <Image src={food1} width={120}   height={115}/>
-                <div style={{minHeight:'40px' , fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
+                <div style={{minHeight:'40px' , fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingRight:'0px'}}>
                   کباب برگ مخصوص
                 </div>
-                <div style={{fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
+                <div style={{fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
                    425.000 T
                 </div>
                 <div>
@@ -132,10 +132,10 @@ const Resturan =() => {
             </div>
             <div style={{width:'33%', textAlign:'center', marginTop:'15px' }}>
                 <Image src={food2} width={120}   height={115}/>
-                <div style={{minHeight:'40px' ,fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
+                <div style={{minHeight:'40px' ,fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingRight:'0px'}}>
                    سالاد سزار با مرغ سوخاری
                 </div>
-                <div style={{fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
+                <div style={{fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
                    260.000 T
                 </div>
                 <div>
@@ -147,10 +147,10 @@ const Resturan =() => {
 
             <div style={{width:'33%', textAlign:'center', marginTop:'15px'}}>
                 <Image src={food3} width={120}   height={115}/>
-                <div style={{minHeight:'40px' ,fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
+                <div style={{minHeight:'40px' ,fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingRight:'0px'}}>
                 سوپ جو
                 </div>
-                <div style={{fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
+                <div style={{fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
                    80.000  T
                 </div>
                 <div>
@@ -162,10 +162,10 @@ const Resturan =() => {
 
             <div style={{width:'33%', textAlign:'center', marginTop:'15px'}}>
                 <Image src={food4} width={120}   height={115}/>
-                <div style={{minHeight:'40px' ,fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
+                <div style={{minHeight:'40px' ,fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingRight:'0px'}}>
                 سیب زمینی سرخ کرده
                 </div>
-                <div style={{fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0x'}}>
+                <div style={{fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0x'}}>
                    95.000  T
                 </div>
                 <div>

@@ -11,6 +11,10 @@ import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import { CaretLeftOutlined, CaretRightOutlined   } from '@ant-design/icons';
 
+import './../../fonts/irsans.ttf';
+import './../dashbord.css';
+
+
 const ArrowL= () =>{
    return (
     <>
