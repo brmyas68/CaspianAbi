@@ -48,30 +48,30 @@ const Dashbord = () => {
 
          <Header/>
 
-         <div style={{display:'flex' ,flexDirection:'column' ,  justifyContent:'center' , alignContent:'center' , marginTop:'120px' ,}}>
+         <div style={{display:'flex' ,flexDirection:'column' ,    marginTop:'40%' ,}}>
         
-          <Row>
+         <Row  style={{  textAlign:'center'}} dir="rtl">
             <Col span={24}>
-            <div  >  <img src={logo} alt="" style={{marginLeft:'22%' ,width:'220px', height:'55px'}} /></div>
+            <div  >  <img src={logo} alt="" style={{ width:'220px', height:'55px'}} /></div>
             </Col>
           </Row>
-          <Row>
+          <Row  style={{  textAlign:'center'}} dir="rtl">
           <Col span={24}>
-            <div style={{  marginLeft:'20%' , marginTop:'45px' ,  fontFamily: 'irsans'  , fontSize:'12px', }}>  ساری - بلوار آزادی، خيابان رفاه،كوچه رفاه سوم</div>
+            <div style={{   marginTop:'45px' ,  fontFamily: 'irsans'  , fontSize:'12px', }}>  ساری - بلوار آزادی، خيابان رفاه،كوچه رفاه سوم</div>
             </Col>
           </Row>
-          <Row>
+          <Row  style={{  textAlign:'center'}} dir="rtl">
           <Col span={24}>
-              <div style={{  marginLeft:'40%' , marginTop:'30px' ,  fontFamily: 'irsans'  , fontSize:'20px', }}>   
+              <div style={{  marginTop:'30px' ,  fontFamily: 'irsans'  , fontSize:'20px', }}>   
               <InstagramOutlined style={{ marginRight:'10px'}} />
               <WhatsAppOutlined style={{ marginRight:'10px'}}/>
-              <TwitterOutlined />
+              <TwitterOutlined style={{ marginRight:'10px'}}/>
               </div>
             </Col>
           </Row>
-          <Row>
+          <Row  style={{  textAlign:'center'}} dir="rtl">
           <Col span={24}>
-            <div style={{ marginLeft:'41%' , marginTop:'9px' , fontFamily: 'irsans'  , fontSize:'12px',}}>
+            <div style={{   marginTop:'9px' , fontFamily: 'irsans'  , fontSize:'12px',}}>
                        01133350400
             </div>
             </Col>
