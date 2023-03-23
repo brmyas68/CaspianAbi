@@ -85,7 +85,7 @@ const items = [
         <div style={{  flexWrap:'wrap' , direction:'rtl' , marginTop:'5px' , marginBottom:'30px',  display:'inline-flex'}}>
             <div style={{width:'32%' , textAlign:'center', marginTop:'15px',  marginRight:'4px'}}>
                 <Image src={bofe1} width={120}   height={115}/>
-                <div style={{marginTop:'10px',fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingRight:'0px'}}>
+                <div style={{minHeight:'40px' , marginTop:'10px',fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingRight:'0px'}}>
                 استیک مرغ (مینی)
                 </div>
                 <div style={{fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
@@ -99,7 +99,7 @@ const items = [
             </div>
             <div style={{width:'32%', textAlign:'center', marginTop:'15px' ,  marginRight:'4px'}}>
                 <Image src={bofe2} width={120}   height={115}/>
-                <div style={{marginTop:'10px',fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingRight:'0px'}}>
+                <div style={{minHeight:'40px' , marginTop:'10px',fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingRight:'0px'}}>
                 استیک مرغ (رژیمی)
                 </div>
                 <div style={{fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
@@ -114,7 +114,7 @@ const items = [
 
             <div style={{width:'32%', textAlign:'center', marginTop:'15px',  marginRight:'4px'}}>
                 <Image src={bofe3} width={120}   height={115}/>
-                <div style={{marginTop:'10px',fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingRight:'0px'}}>
+                <div style={{minHeight:'40px' , marginTop:'10px',fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingRight:'0px'}}>
                 دمپختک شیرازی (گیاهی)
                 </div>
                 <div style={{fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
@@ -129,7 +129,7 @@ const items = [
 
             <div style={{width:'32%', textAlign:'center', marginTop:'15px',  marginRight:'4px'}}>
                 <Image src={bofe4} width={120}   height={115}/>
-                <div style={{marginTop:'10px',fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingRight:'0px'}}>
+                <div style={{minHeight:'40px' , marginTop:'10px',fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingRight:'0px'}}>
                 جوجه ترش (رژیمی) 
                 </div>
                 <div style={{fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0x'}}>

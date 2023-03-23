@@ -118,7 +118,7 @@ const Resturan =() => {
         <div style={{    flexWrap:'wrap' , direction:'rtl' , marginTop:'5px' , marginBottom:'30px',  display:'inline-flex'}}>
             <div style={{width:'32%' , textAlign:'center', marginTop:'15px',  marginRight:'4px'}}>
                 <Image src={food1} width={120}   height={115}/>
-                <div style={{minHeight:'40px' , fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingRight:'0px'}}>
+                <div style={{minHeight:'40px' , marginTop:'10px', fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingRight:'0px'}}>
                   کباب برگ مخصوص
                 </div>
                 <div style={{fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
@@ -132,7 +132,7 @@ const Resturan =() => {
             </div>
             <div style={{width:'32%', textAlign:'center', marginTop:'15px' ,  marginRight:'4px'}}>
                 <Image src={food2} width={120}   height={115}/>
-                <div style={{minHeight:'40px' ,fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingRight:'0px'}}>
+                <div style={{minHeight:'40px' , marginTop:'10px',fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingRight:'0px'}}>
                    سالاد سزار با مرغ سوخاری
                 </div>
                 <div style={{fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
@@ -147,7 +147,7 @@ const Resturan =() => {
 
             <div style={{width:'32%', textAlign:'center', marginTop:'15px' ,  marginRight:'4px'}}>
                 <Image src={food3} width={120}   height={115}/>
-                <div style={{minHeight:'40px' ,fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingRight:'0px'}}>
+                <div style={{minHeight:'40px' , marginTop:'10px',fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingRight:'0px'}}>
                 سوپ جو
                 </div>
                 <div style={{fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
@@ -162,7 +162,7 @@ const Resturan =() => {
 
             <div style={{width:'32%', textAlign:'center', marginTop:'15px' , marginRight:'4px'}}>
                 <Image src={food4} width={120}   height={115}/>
-                <div style={{minHeight:'40px' ,fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingRight:'0px'}}>
+                <div style={{minHeight:'40px' , marginTop:'10px',fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingRight:'0px'}}>
                 سیب زمینی سرخ کرده
                 </div>
                 <div style={{fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0x'}}>
