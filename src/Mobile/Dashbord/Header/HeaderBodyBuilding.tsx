@@ -7,7 +7,8 @@ import bodybuilding from '../../icon/gym.png';
 
 import { Navigate, useNavigate } from 'react-router-dom';
  
-
+import './../../fonts/irsans.ttf';
+import './header.css';
 
 const HeaderBodyBuilding =() => {
     let navigate = useNavigate();
@@ -31,7 +32,7 @@ const HeaderBodyBuilding =() => {
                     />
                     </Col>
                     <Col span={9} style={{textAlign:'right' , paddingRight:'10px' , paddingTop:'7px' , }}>
-                        <span  style={{  paddingRight:'10px' ,  color: '#6b6b6b' , paddingTop:'0px' , fontSize:'15px', fontFamily:'Vazir'}}>
+                    <span  style={{  paddingRight:'10px' ,  color: '#1f1f1f' , paddingTop:'0px' ,   fontFamily: 'irsans'  , fontSize:'13px' ,}}>
                            بدنسازی
                         </span>
                         <ArrowRightOutlined onClick={()=>{ navigate('/dashbord');}}  style={{   fontSize:'17px'  ,  fontWeight:'600' }} />
