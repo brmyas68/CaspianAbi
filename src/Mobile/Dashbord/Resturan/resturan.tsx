@@ -13,6 +13,10 @@ import food3 from "../../images/resturan/soup2.jpg";
 import food4 from "../../images/resturan/sib1.jpg";
 import { CaretLeftOutlined, CaretRightOutlined   } from '@ant-design/icons';
 
+ 
+import './../../fonts/irsans.ttf';
+import './../dashbord.css';
+
 const ArrowL= () =>{
    return (
     <>
@@ -38,53 +42,53 @@ const Resturan =() => {
  
     const items = [
       <div className="item" data-value="1"  style={{ textAlign:'center', marginRight:'3px' }}>
-         <Button block type="dashed"  style={{height:'35px', fontWeight:'600',padding: '0px' , fontSize:'11px'}} >
+         <Button block type="dashed"  style={{height:'35px', fontFamily:'irsans'  ,padding: '0px' , fontSize:'13px'}} >
           پیش غذاها 
         </Button>
     </div>,
       <div className="item" data-value="2"  style={{  marginRight:'3px' }}>
-         <Button  block  type="dashed" style={{height:'35px', fontWeight:'600', padding: '0px' ,  fontSize:'11px'}} >
+         <Button  block  type="dashed" style={{height:'35px', fontFamily:'irsans' , padding: '0px' ,  fontSize:'13px'}} >
          پیش غذاهای فرنگی
         </Button>
       </div>,
       <div className="item" data-value="3" style={{ textAlign:'center', marginRight:'3px' }}>
-        <Button block type="dashed" style={{height:'35px', fontWeight:'600', padding: '0px' , fontSize:'11px'}} >
+        <Button block type="dashed" style={{height:'35px', fontFamily:'irsans' , padding: '0px' , fontSize:'13px'}} >
         سالادها
         </Button>
       </div>,
       <div className="item" data-value="4" style={{ textAlign:'center', marginRight:'3px' }}>
-         <Button block type="dashed" style={{height:'35px', fontWeight:'600', padding: '0px' , fontSize:'11px'}} >
+         <Button block type="dashed" style={{height:'35px',fontFamily:'irsans' , padding: '0px' , fontSize:'13px'}} >
           غذای اصلی
          </Button>
       </div>,
       <div className="item" data-value="5"  style={{  textAlign:'center', marginRight:'3px' }}>
-          <Button block type="dashed" style={{height:'35px', fontWeight:'600', padding: '0px' ,fontSize:'11px'}}  >
+          <Button block type="dashed" style={{height:'35px', fontFamily:'irsans' , padding: '0px' ,fontSize:'13px'}}  >
          سینی‌ها
         </Button>
       </div>,
        <div className="item" data-value="6"  style={{ textAlign:'center', marginRight:'3px' }}>
-           <Button block type="dashed"  style={{height:'35px', fontWeight:'600',padding: '0px' , fontSize:'11px'}}>
+           <Button block type="dashed"  style={{height:'35px', fontFamily:'irsans' ,padding: '0px' , fontSize:'13px'}}>
           خوراک ها
            </Button>
       </div>,
        <div className="item" data-value="7"  style={{ textAlign:'center', marginRight:'3px' }}>
-        <Button block type="dashed"  style={{height:'35px', fontWeight:'600', padding: '0px' ,fontSize:'11px'}}>
+        <Button block type="dashed"  style={{height:'35px', fontFamily:'irsans' , padding: '0px' ,fontSize:'13px'}}>
         چلوها
         </Button>
       </div>,
 
       <div className="item" data-value="8"  style={{ textAlign:'center', marginRight:'3px' }}>
-        <Button block type="dashed"  style={{height:'35px', fontWeight:'600',padding: '0px' ,fontSize:'11px'}}>
+        <Button block type="dashed"  style={{height:'35px', fontFamily:'irsans' ,padding: '0px' ,fontSize:'13px'}}>
         دیزی
         </Button>
       </div>,
       <div className="item" data-value="9"  style={{ textAlign:'center', marginRight:'3px' }}>
-        <Button block type="dashed"  style={{height:'35px', fontWeight:'600', padding: '0px' ,fontSize:'11px'}}>
+        <Button block type="dashed"  style={{height:'35px', fontFamily:'irsans' , padding: '0px' ,fontSize:'13px'}}>
         غذای مخصوص
         </Button>
       </div>,
       <div className="item" data-value="10"  style={{ textAlign:'center', marginRight:'3px' }}>
-        <Button block type="dashed"   style={{  height:'35px', fontWeight:'600',padding: '0px' ,fontSize:'11px'}}>
+        <Button block type="dashed"   style={{  height:'35px', fontFamily:'irsans' ,padding: '0px' ,fontSize:'13px'}}>
         نوشیدنی ها
         </Button>
       </div>,
@@ -114,28 +118,28 @@ const Resturan =() => {
         <div style={{    flexWrap:'wrap' , direction:'rtl' , marginTop:'5px' , marginBottom:'30px',  display:'inline-flex'}}>
             <div style={{width:'33%' , textAlign:'center', marginTop:'15px'}}>
                 <Image src={food1} width={120}   height={115}/>
-                <div style={{minHeight:'40px' , fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
+                <div style={{minHeight:'40px' , fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
                   کباب برگ مخصوص
                 </div>
-                <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
+                <div style={{fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
                    425.000 T
                 </div>
                 <div>
-                <Button type="primary"  style={{background:'green' , marginTop:'15px', marginBottom:'20px',  fontSize:'13px'}}>
+                <Button type="primary"  style={{fontFamily:'irsans' , background:'green' , marginTop:'15px', marginBottom:'20px',  fontSize:'13px'}}>
                    سفارش
                 </Button>
                 </div>
             </div>
             <div style={{width:'33%', textAlign:'center', marginTop:'15px' }}>
                 <Image src={food2} width={120}   height={115}/>
-                <div style={{minHeight:'40px' ,fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
+                <div style={{minHeight:'40px' ,fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
                    سالاد سزار با مرغ سوخاری
                 </div>
-                <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
+                <div style={{fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
                    260.000 T
                 </div>
                 <div>
-                <Button type="primary"  style={{background:'green' , marginTop:'15px',  marginBottom:'20px', fontSize:'13px'}}>
+                <Button type="primary"  style={{fontFamily:'irsans' , background:'green' , marginTop:'15px',  marginBottom:'20px', fontSize:'13px'}}>
                    سفارش
                 </Button>
                 </div>
@@ -143,14 +147,14 @@ const Resturan =() => {
 
             <div style={{width:'33%', textAlign:'center', marginTop:'15px'}}>
                 <Image src={food3} width={120}   height={115}/>
-                <div style={{minHeight:'40px' ,fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
+                <div style={{minHeight:'40px' ,fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
                 سوپ جو
                 </div>
-                <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
+                <div style={{fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
                    80.000  T
                 </div>
                 <div>
-                <Button type="primary"  style={{background:'green' , marginTop:'15px', marginBottom:'20px', fontSize:'13px'}}>
+                <Button type="primary"  style={{fontFamily:'irsans' , background:'green' , marginTop:'15px', marginBottom:'20px', fontSize:'13px'}}>
                    سفارش
                 </Button>
                 </div>
@@ -158,14 +162,14 @@ const Resturan =() => {
 
             <div style={{width:'33%', textAlign:'center', marginTop:'15px'}}>
                 <Image src={food4} width={120}   height={115}/>
-                <div style={{minHeight:'40px' ,fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
+                <div style={{minHeight:'40px' ,fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
                 سیب زمینی سرخ کرده
                 </div>
-                <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0x'}}>
+                <div style={{fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0x'}}>
                    95.000  T
                 </div>
                 <div>
-                <Button type="primary"  style={{background:'green' , marginTop:'15px',  marginBottom:'20px', fontSize:'13px'}}>
+                <Button type="primary"  style={{fontFamily:'irsans' , background:'green' , marginTop:'15px',  marginBottom:'20px', fontSize:'13px'}}>
                    سفارش
                 </Button>
                 </div>

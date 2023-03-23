@@ -12,6 +12,10 @@ import cafe3 from "../../images/cafe/cafe3.jpg";
 import cafe4 from "../../images/cafe/cafe4.jpg";
 import { CaretLeftOutlined, CaretRightOutlined   } from '@ant-design/icons';
 
+ 
+import './../../fonts/irsans.ttf';
+import './../dashbord.css';
+
 const ArrowL= () =>{
    return (
     <>
@@ -36,53 +40,53 @@ const Cafe =() => {
 
 const items = [
   <div className="item" data-value="1"  style={{ textAlign:'center', marginRight:'3px' }}>
-     <Button block type="dashed"  style={{height:'35px', fontWeight:'600',padding: '0px' , fontSize:'11px'}} >
+     <Button block type="dashed"  style={{height:'35px', fontFamily:'irsans' ,padding: '0px' , fontSize:'13px'}} >
      اسپرسو بار
     </Button>
 </div>,
   <div className="item" data-value="2"  style={{  marginRight:'3px' }}>
-     <Button  block  type="dashed" style={{ height:'35px', fontWeight:'600',padding: '0px' ,  fontSize:'11px'}} >
+     <Button  block  type="dashed" style={{ height:'35px', fontFamily:'irsans' ,padding: '0px' ,  fontSize:'13px'}} >
      قـهوه دمـی
     </Button>
   </div>,
   <div className="item" data-value="3" style={{ textAlign:'center', marginRight:'3px' }}>
-    <Button block type="dashed" style={{ height:'35px', fontWeight:'600',padding: '0px' , fontSize:'11px'}} >
+    <Button block type="dashed" style={{ height:'35px', fontFamily:'irsans' ,padding: '0px' , fontSize:'13px'}} >
     آیس کافـی
     </Button>
   </div>,
   <div className="item" data-value="4" style={{ textAlign:'center', marginRight:'3px' }}>
-     <Button block type="dashed" style={{ height:'35px', fontWeight:'600',padding: '0px' , fontSize:'11px'}} >
+     <Button block type="dashed" style={{ height:'35px', fontFamily:'irsans' ,padding: '0px' , fontSize:'13px'}} >
      نوشیدنی گرم
      </Button>
   </div>,
   <div className="item" data-value="5"  style={{  textAlign:'center', marginRight:'3px' }}>
-      <Button block type="dashed" style={{height:'35px', fontWeight:'600', padding: '0px' ,fontSize:'11px'}}  >
+      <Button block type="dashed" style={{height:'35px', fontFamily:'irsans' , padding: '0px' ,fontSize:'13px'}}  >
       دمـنوش ها
     </Button>
   </div>,
    <div className="item" data-value="6"  style={{ textAlign:'center', marginRight:'3px' }}>
-       <Button block type="dashed"  style={{height:'35px', fontWeight:'600',padding: '0px' , fontSize:'11px'}}>
+       <Button block type="dashed"  style={{height:'35px',fontFamily:'irsans' ,padding: '0px' , fontSize:'13px'}}>
        چای
        </Button>
   </div>,
    <div className="item" data-value="7"  style={{ textAlign:'center', marginRight:'3px' }}>
-    <Button block type="dashed"  style={{height:'35px', fontWeight:'600', padding: '0px' ,fontSize:'11px'}}>
+    <Button block type="dashed"  style={{height:'35px', fontFamily:'irsans' , padding: '0px' ,fontSize:'13px'}}>
     مـاکـتیـل
     </Button>
   </div>,
 
   <div className="item" data-value="8"  style={{ textAlign:'center', marginRight:'3px' }}>
-    <Button block type="dashed"  style={{height:'35px', fontWeight:'600',padding: '0px' ,fontSize:'11px'}}>
+    <Button block type="dashed"  style={{height:'35px',fontFamily:'irsans' ,padding: '0px' ,fontSize:'13px'}}>
     سردنوش
     </Button>
   </div>,
   <div className="item" data-value="9"  style={{ textAlign:'center', marginRight:'3px' }}>
-    <Button block type="dashed"  style={{ height:'35px', fontWeight:'600',padding: '0px' ,fontSize:'11px'}}>
+    <Button block type="dashed"  style={{ height:'35px', fontFamily:'irsans' ,padding: '0px' ,fontSize:'13px'}}>
     آبمیوه طبیعی
     </Button>
   </div>,
   <div className="item" data-value="10"  style={{ textAlign:'center', marginRight:'3px' }}>
-    <Button block type="dashed"   style={{ height:'35px', fontWeight:'600', padding: '0px' ,fontSize:'11px'}}>
+    <Button block type="dashed"   style={{ height:'35px', fontFamily:'irsans' , padding: '0px' ,fontSize:'13px'}}>
     اسموتی
     </Button>
   </div>,
@@ -111,28 +115,28 @@ const items = [
         <div style={{   flexWrap:'wrap' , direction:'rtl' , marginTop:'5px' , marginBottom:'30px',  display:'inline-flex'}}>
             <div style={{width:'33%' , textAlign:'center', marginTop:'15px'}}>
                 <Image src={cafe1} width={120}   height={115}/>
-                <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
+                <div style={{fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
                 لاتــه
                 </div>
-                <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
+                <div style={{fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
                 85.000  T
                 </div>
                 <div>
-                <Button type="primary"  style={{background:'green' , marginTop:'15px',  marginBottom:'20px', fontSize:'13px'}}>
+                <Button type="primary"  style={{fontFamily:'irsans' ,background:'green' , marginTop:'15px',  marginBottom:'20px', fontSize:'13px'}}>
                    سفارش
                 </Button>
                 </div>
             </div>
             <div style={{width:'33%', textAlign:'center', marginTop:'15px' }}>
                 <Image src={cafe2} width={120}   height={115}/>
-                <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
+                <div style={{fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
                 آیس آمریکانو
                 </div>
-                <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
+                <div style={{fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
                 80.000  T
                 </div>
                 <div>
-                <Button type="primary"  style={{background:'green' , marginTop:'15px',  marginBottom:'20px', fontSize:'13px'}}>
+                <Button type="primary"  style={{fontFamily:'irsans' ,background:'green' , marginTop:'15px',  marginBottom:'20px', fontSize:'13px'}}>
                    سفارش
                 </Button>
                 </div>
@@ -140,14 +144,14 @@ const items = [
 
             <div style={{width:'33%', textAlign:'center', marginTop:'15px'}}>
                 <Image src={cafe3} width={120}   height={115}/>
-                <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
+                <div style={{fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
                 دمنوش گل گاو زبان
                 </div>
-                <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
+                <div style={{fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
                    60.000  T
                 </div>
                 <div>
-                <Button type="primary"  style={{background:'green' , marginTop:'15px', marginBottom:'20px', fontSize:'13px'}}>
+                <Button type="primary"  style={{fontFamily:'irsans' ,background:'green' , marginTop:'15px', marginBottom:'20px', fontSize:'13px'}}>
                    سفارش
                 </Button>
                 </div>
@@ -155,14 +159,14 @@ const items = [
 
             <div style={{width:'33%', textAlign:'center', marginTop:'15px'}}>
                 <Image src={cafe4} width={120}   height={115}/>
-                <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
+                <div style={{fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
                 هرمس
                 </div>
-                <div style={{fontFamily:'tahoma' , fontSize:'12px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0x'}}>
+                <div style={{fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0x'}}>
                    95.000  T
                 </div>
                 <div>
-                <Button type="primary"  style={{background:'green' , marginTop:'15px',  marginBottom:'20px', fontSize:'13px'}}>
+                <Button type="primary"  style={{fontFamily:'irsans' ,background:'green' , marginTop:'15px',  marginBottom:'20px', fontSize:'13px'}}>
                    سفارش
                 </Button>
                 </div>
