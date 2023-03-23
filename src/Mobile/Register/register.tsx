@@ -42,9 +42,9 @@ const Register =() => {
        
     return (
         <>
-        <div style={{height:'100vh' , width:'100%' , marginTop:'50px' , display:'flex', flexDirection:'column',alignItems:'center' , }}>
+        <div style={{  marginTop:'50px' , display:'flex', flexDirection:'column', }}>
                 <input accept="image/*"  onChange={ handleImageUpload} ref={inputFile}  type="file" id="file" style={{display: "none"}}/>
-                <Row justify="start" dir="rtl">
+                <Row  style={{  textAlign:'center'}} dir="rtl">
                     
                     <Col span={24} >
                         {
@@ -64,52 +64,52 @@ const Register =() => {
                         
                 </Row>
                 <br />
-                <Row justify="start" dir="rtl">
+                <Row  style={{  textAlign:'center'}} dir="rtl">
                     
                     <Col span={24} >
-                       <Button  onClick={F_SelectFile}  style={{  fontSize:'11px', fontFamily: 'irsans'  ,}} icon={<UploadOutlined  />}>انتخاب عکس</Button>
+                       <Button  onClick={F_SelectFile}    style={{ width:'30%' , fontSize:'13px', fontFamily: 'irsans'  ,}} icon={<UploadOutlined  />}>انتخاب عکس</Button>
                     </Col>
                         
                 </Row>
-                <br /> <br />
-                <Row justify="start" dir="rtl">
+                <br /> <br /><br />
+                <Row  style={{  textAlign:'center'}} dir="rtl">
                     
                     <Col span={24} >
-                        <Input size="large" maxLength={30} style={{ fontSize:'11px',width: '100%', fontFamily: 'irsans'  ,}} placeholder="نام" />
+                        <Input size="large" maxLength={30} style={{  width:'50%' ,fontSize:'13px',  fontFamily: 'irsans'  ,}} placeholder="نام" />
                     </Col>
                         
                 </Row>
                 <br /> 
-                <Row justify="start" dir="rtl">
+                <Row  style={{  textAlign:'center'}} dir="rtl">
                     
                     <Col span={24} >
-                        <Input size="large" maxLength={100} style={{ fontSize:'11px',width: '100%', fontFamily: 'irsans'  ,}} placeholder="نام خانوادگی" />
+                        <Input size="large" maxLength={100} style={{ width:'50%' , fontSize:'13px', fontFamily: 'irsans'  ,}} placeholder="نام خانوادگی" />
                     </Col>
                         
                 </Row>
                 <br />  
-                <Row justify="start" dir="rtl">
+                <Row  style={{  textAlign:'center'}} dir="rtl">
                     
                     <Col span={24} >
-                       <Input ref={inputElementCodeMeli} style={{  fontSize:'11px', fontFamily: 'irsans'  ,}} placeholder="کد ملی" size="large"  inputMode="numeric" value={codeMeli}  onKeyDown={(event)=>{  if (codeMeli.length  == 11 ) {  if(event.key === 'Backspace'){} else { event.preventDefault();}} else if( event.key === 'e' || event.key === 'E' || event.key === '-' || event.key === '+'|| event.key === '.') {event.preventDefault()} }} onChange={ChangeMobile}         />
+                       <Input ref={inputElementCodeMeli} style={{  width:'50%' , fontSize:'13px', fontFamily: 'irsans'  ,}} placeholder="کد ملی" size="large"  inputMode="numeric" value={codeMeli}  onKeyDown={(event)=>{  if (codeMeli.length  == 11 ) {  if(event.key === 'Backspace'){} else { event.preventDefault();}} else if( event.key === 'e' || event.key === 'E' || event.key === '-' || event.key === '+'|| event.key === '.') {event.preventDefault()} }} onChange={ChangeMobile}         />
                        
                     </Col>
                         
                 </Row>
                 <br /> 
-                <Row justify="start" dir="rtl">
+                <Row  style={{  textAlign:'center'}} dir="rtl">
                     
                     <Col span={24} >
-                        <Input size="large" maxLength={300} style={{ fontSize:'11px',width: '100%' , fontFamily: 'irsans'  ,}} placeholder="آدرس" />
+                        <Input size="large" maxLength={300} style={{  width:'50%' , fontSize:'13px',  fontFamily: 'irsans'  ,}} placeholder="آدرس" />
                     </Col>
                         
                 </Row>
 
                 <br /> 
-                <Row justify="start" dir="rtl">
+                <Row  style={{  marginTop:'20px' ,  textAlign:'center'}} dir="rtl">
                     
                     <Col span={24} >
-                        <Button onClick={F_Register} size="large" type="primary" block  style={{ fontFamily: 'irsans'  ,  width:'100%', marginTop:'12px' ,  fontSize:'13px',}} >   عضویت در کاسپین آبی   </Button>
+                        <Button onClick={F_Register} size="large" type="primary" block  style={{  width:'50%' ,fontFamily: 'irsans'  ,    fontSize:'14px',}} >   عضویت در کاسپین آبی   </Button>
                     </Col>
                         
                 </Row>
