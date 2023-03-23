@@ -3,6 +3,10 @@ import { UserOutlined , UploadOutlined   } from '@ant-design/icons';
 import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+import './../fonts/irsans.ttf';
+
+import  './register.css';
+
 const Register =() => {
     const inputFile = useRef<HTMLInputElement | null>(null);
     const inputElementCodeMeli = useRef<InputRef | null>(null);
@@ -63,7 +67,7 @@ const Register =() => {
                 <Row justify="start" dir="rtl">
                     
                     <Col span={24} >
-                       <Button  onClick={F_SelectFile}  icon={<UploadOutlined  />}>انتخاب عکس</Button>
+                       <Button  onClick={F_SelectFile}  style={{  fontSize:'11px', fontFamily: 'irsans'  ,}} icon={<UploadOutlined  />}>انتخاب عکس</Button>
                     </Col>
                         
                 </Row>
@@ -71,7 +75,7 @@ const Register =() => {
                 <Row justify="start" dir="rtl">
                     
                     <Col span={24} >
-                        <Input size="large" maxLength={30} style={{width: '100%'}} placeholder="نام" />
+                        <Input size="large" maxLength={30} style={{ fontSize:'11px',width: '100%', fontFamily: 'irsans'  ,}} placeholder="نام" />
                     </Col>
                         
                 </Row>
@@ -79,7 +83,7 @@ const Register =() => {
                 <Row justify="start" dir="rtl">
                     
                     <Col span={24} >
-                        <Input size="large" maxLength={100} style={{width: '100%'}} placeholder="نام خانوادگی" />
+                        <Input size="large" maxLength={100} style={{ fontSize:'11px',width: '100%', fontFamily: 'irsans'  ,}} placeholder="نام خانوادگی" />
                     </Col>
                         
                 </Row>
@@ -87,7 +91,7 @@ const Register =() => {
                 <Row justify="start" dir="rtl">
                     
                     <Col span={24} >
-                       <Input ref={inputElementCodeMeli} placeholder="کد ملی" size="large"  inputMode="numeric" value={codeMeli}  onKeyDown={(event)=>{  if (codeMeli.length  == 11 ) {  if(event.key === 'Backspace'){} else { event.preventDefault();}} else if( event.key === 'e' || event.key === 'E' || event.key === '-' || event.key === '+'|| event.key === '.') {event.preventDefault()} }} onChange={ChangeMobile}         />
+                       <Input ref={inputElementCodeMeli} style={{  fontSize:'11px', fontFamily: 'irsans'  ,}} placeholder="کد ملی" size="large"  inputMode="numeric" value={codeMeli}  onKeyDown={(event)=>{  if (codeMeli.length  == 11 ) {  if(event.key === 'Backspace'){} else { event.preventDefault();}} else if( event.key === 'e' || event.key === 'E' || event.key === '-' || event.key === '+'|| event.key === '.') {event.preventDefault()} }} onChange={ChangeMobile}         />
                        
                     </Col>
                         
@@ -96,7 +100,7 @@ const Register =() => {
                 <Row justify="start" dir="rtl">
                     
                     <Col span={24} >
-                        <Input size="large" maxLength={300} style={{width: '100%'}} placeholder="آدرس" />
+                        <Input size="large" maxLength={300} style={{ fontSize:'11px',width: '100%' , fontFamily: 'irsans'  ,}} placeholder="آدرس" />
                     </Col>
                         
                 </Row>
@@ -105,7 +109,7 @@ const Register =() => {
                 <Row justify="start" dir="rtl">
                     
                     <Col span={24} >
-                        <Button onClick={F_Register} size="large" type="primary" block  style={{   width:'100%', marginTop:'12px' , fontWeight:'600'}} >   عضویت در کاسپین آبی   </Button>
+                        <Button onClick={F_Register} size="large" type="primary" block  style={{ fontFamily: 'irsans'  ,  width:'100%', marginTop:'12px' ,  fontSize:'13px',}} >   عضویت در کاسپین آبی   </Button>
                     </Col>
                         
                 </Row>
