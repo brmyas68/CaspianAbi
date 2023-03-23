@@ -1,6 +1,7 @@
 
 import { Avatar, Segmented, Space , Drawer, Row, Col  } from 'antd';
 
+import './../../Mobile/fonts/irsans.ttf';
 import './dashbord.css';
 import resturan from '../icon/resturan.png';
 import cafe from '../icon/cafe.png';
@@ -9,9 +10,12 @@ import gym from '../icon/gym.png';
 import boling from '../icon/boling.png';
 import bofe from '../icon/bofe.png';
 import masaj from '../icon/masaj.png';
+import logo from '../icon/logo.png';
 import Header from './Header/header';
 import { Navigate, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+
+import  { InstagramOutlined ,WhatsAppOutlined, TwitterOutlined,} from '@ant-design/icons';
 
 const Dashbord = () => {
     let navigate = useNavigate();
@@ -44,22 +48,31 @@ const Dashbord = () => {
 
          <Header/>
 
-         <div style={{display:'flex' ,flexDirection:'column' , marginRight:'50%', marginLeft:'50%' ,justifyContent:'center' ,   marginTop:'120px' ,}}>
+         <div style={{display:'flex' ,flexDirection:'column' ,  justifyContent:'center' , alignContent:'center' , marginTop:'100px' ,}}>
         
           <Row>
             <Col span={24}>
-            <div style={{ fontWeight:'600',  fontFamily:'tahoma', fontSize:'15px'}}> (( به مجموعه ورزشی کاسپین آبی   خوش آمدید ))</div>
+            <div  >  <img src={logo} alt="" style={{marginLeft:'30%' ,width:'220px', height:'55px'}} /></div>
             </Col>
           </Row>
           <Row>
           <Col span={24}>
-            <div style={{  marginRight:'5%' ,fontFamily:'tahoma', fontSize:'12px'}}> آدرس: ساری - بلوار آزادی، خيابان رفاه،كوچه رفاه سوم</div>
+            <div style={{  marginLeft:'26%' , marginTop:'25px' ,  fontFamily: 'irsans'  , fontSize:'12px', }}>  ساری - بلوار آزادی، خيابان رفاه،كوچه رفاه سوم</div>
             </Col>
           </Row>
           <Row>
           <Col span={24}>
-            <div style={{  marginRight:'5%' , fontFamily:'tahoma', fontSize:'12px'}}>
-                  شماره تماس : 01133350400
+              <div style={{  marginLeft:'40%' , marginTop:'20px' ,  fontFamily: 'irsans'  , fontSize:'20px', }}>   
+              <InstagramOutlined style={{ marginRight:'10px'}} />
+              <WhatsAppOutlined style={{ marginRight:'10px'}}/>
+              <TwitterOutlined />
+              </div>
+            </Col>
+          </Row>
+          <Row>
+          <Col span={24}>
+            <div style={{ marginLeft:'40%' , marginTop:'9px' , fontFamily: 'irsans'  , fontSize:'12px',}}>
+                       01133350400
             </div>
             </Col>
           </Row>
@@ -81,7 +94,7 @@ const Dashbord = () => {
                         padding: 2, 
                         fontSize:'12px',
                         textAlign:'center',
-                        fontWeight:'600'
+                        fontFamily: 'irsans'  , 
                     }}
                     >
                     <Avatar src={masaj}  />
@@ -97,7 +110,7 @@ const Dashbord = () => {
                         padding: 2, 
                         fontSize:'12px',
                         textAlign:'center',
-                        fontWeight:'600'
+                        fontFamily: 'irsans'  , 
                     }}
                     >
                     
@@ -114,7 +127,7 @@ const Dashbord = () => {
                         padding: 2, 
                         fontSize:'12px',
                         textAlign:'center',
-                        fontWeight:'600'
+                        fontFamily: 'irsans'  , 
                     }}
                     >
                      
@@ -131,7 +144,7 @@ const Dashbord = () => {
                             padding: 2, 
                             fontSize:'12px',
                             textAlign:'center',
-                            fontWeight:'600'
+                            fontFamily: 'irsans'  , 
                         }}
                         >
                         <Avatar src={gym} />
@@ -147,7 +160,7 @@ const Dashbord = () => {
                                 padding: 2, 
                                 fontSize:'12px',
                                 textAlign:'center',
-                                fontWeight:'600'
+                                fontFamily: 'irsans'  , 
                             }}
                             >
                             <Avatar src={swim}  />
@@ -163,7 +176,7 @@ const Dashbord = () => {
                                     padding: 2, 
                                     fontSize:'12px',
                                     textAlign:'center',
-                                    fontWeight:'600'
+                                    fontFamily: 'irsans'  , 
                                 }}
                                 >
                                  <Avatar src={cafe}  />
@@ -180,7 +193,7 @@ const Dashbord = () => {
                                     paddingTop:2,
                                     fontSize:'12px',
                                     textAlign:'right',
-                                    fontWeight:'600'
+                                    fontFamily: 'irsans'  , 
                                 }}
                                 >
                                  <Avatar src={resturan}  />
