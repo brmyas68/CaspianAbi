@@ -34,7 +34,7 @@ const HeaderBofeBodyBuilding =() => {
                     <span  style={{  paddingRight:'10px' ,  color: '#1f1f1f' , paddingTop:'0px' ,   fontFamily: 'irsans'  , fontSize:'13px' ,}}>
                         بوفه بدنسازی
                         </span>
-                        <ArrowRightOutlined onClick={()=>{ navigate('/dashbord');}}  style={{   fontSize:'17px'  ,  fontWeight:'600' }} />
+                        <ArrowRightOutlined onClick={()=>{ navigate('/bofe');}}  style={{   fontSize:'17px'  ,  fontWeight:'600' }} />
                        
                     </Col>
                 </Row>
