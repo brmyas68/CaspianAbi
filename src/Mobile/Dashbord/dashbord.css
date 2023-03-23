@@ -40,11 +40,11 @@ body,html{
  }
 
 
-.BoxShadow{
-    box-shadow: 
-                            -10px -10px 15px rgba(221, 221, 221, 0.5),
-                            3px 3px 5px rgba(167, 167, 167, 0.12);
-}
+                        .BoxShadow{
+                            box-shadow: 
+                                                    -10px -10px 15px rgba(221, 221, 221, 0.5),
+                                                    3px 3px 5px rgba(167, 167, 167, 0.12);
+                        }
 
  
 .alice-carousel{
