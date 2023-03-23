@@ -50,7 +50,7 @@ const Header =() => {
                     />
                     </Col>
                     <Col span={9} style={{textAlign:'right' , paddingRight:'10px' , paddingTop:'7px' , }}>
-                        <span  style={{  paddingRight:'10px' ,    color: '#1f1f1f' ,   fontFamily: 'irsans'  , fontSize:'14px' , }}>
+                        <span  style={{  paddingRight:'10px' ,    color: '#1f1f1f' ,   fontFamily: 'irsans'  , fontSize:'13px' , }}>
                             محمد رحیمی
                         </span>
                         <MenuOutlined  onClick={showDrawer} style={{   fontSize:'17px' ,  fontWeight:'600' }} />

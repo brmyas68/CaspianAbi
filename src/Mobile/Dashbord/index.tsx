@@ -52,7 +52,7 @@ const Dashbord = () => {
         
           <Row>
             <Col span={24}>
-            <div  >  <img src={logo} alt="" style={{marginLeft:'20%' ,width:'220px', height:'55px'}} /></div>
+            <div  >  <img src={logo} alt="" style={{marginLeft:'22%' ,width:'220px', height:'55px'}} /></div>
             </Col>
           </Row>
           <Row>
