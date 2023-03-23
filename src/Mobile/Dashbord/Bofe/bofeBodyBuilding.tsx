@@ -82,7 +82,7 @@ const items = [
 
 
      
-        <div style={{  flexWrap:'wrap' , direction:'rtl' , marginTop:'5px' , marginBottom:'30px',  display:'inline-flex'}}>
+        <div style={{  flexWrap:'wrap' , direction:'rtl' , marginTop:'0px' , marginBottom:'30px',  display:'inline-flex'}}>
             <div style={{width:'32%' , textAlign:'center', marginTop:'15px',  marginRight:'4px'}}>
                 <Image src={bofe1} width={120}   height={115}/>
                 <div style={{minHeight:'40px' , marginTop:'10px',fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingRight:'0px'}}>
