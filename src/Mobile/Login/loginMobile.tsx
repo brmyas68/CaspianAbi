@@ -3,6 +3,8 @@ import { Col, Row , Input , Button, InputRef } from 'antd';
 import { MobileOutlined ,LockOutlined} from '@ant-design/icons';
 import { Navigate, useNavigate } from 'react-router-dom';
 
+import './../fonts/irsans.ttf';
+
 import  './login.css';
 
 const Login =()=>{
@@ -113,13 +115,13 @@ const Login =()=>{
                 <Row style={{  height:'100vh' , marginTop:'-60px' , justifyContent:'center' , alignContent:'center', alignItems:'center' , ... styles.Show}} >
                     <Col span={3}></Col>
                     <Col span={18}  >
-                    <div style={{textAlign:'right' , marginBottom:'10px' , fontSize:'15px' , fontWeight:'600' , color:'#6b6b6b'}}>شماره موبایل</div>
+                    <div style={{textAlign:'right' , marginBottom:'10px' , fontSize:'15px' ,  fontFamily: 'irsans'  , color:'#6b6b6b'}}>شماره موبایل</div>
                     <div>  <Input inputMode="numeric" ref={inputElementMobile} placeholder="" size="large"   value={mobile}  onKeyDown={(event)=>{  if (mobile.length  == 11 ) {  if(event.key === 'Backspace'){} else { event.preventDefault();}} else if( event.key === 'e' || event.key === 'E' || event.key === '-' || event.key === '+'|| event.key === '.') {event.preventDefault()} }} onChange={ChangeMobile}        prefix={<MobileOutlined  style={{ fontSize: '20px ' }} />} /> </div>
-                    <div>  <Button onClick={F_SendActiveCode} size="large" type="primary" block  style={{ marginTop:'12px' , fontWeight:'600'}}  >  ارسال کد </Button></div>
+                    <div>  <Button onClick={F_SendActiveCode} size="large" type="primary" block  style={{   fontFamily: 'irsans'  ,marginTop:'12px' , fontWeight:'600'}}  >  ارسال کد </Button></div>
                     
                     <div style={{marginTop:'50px' , direction:'rtl' , paddingRight:'10px'}}>
                         <span style={{color:'red'}}>*</span>
-                        <span style={{textAlign:'justify', paddingRight:'10px' ,  }}>
+                        <span style={{textAlign:'justify', paddingRight:'10px' ,  fontFamily: 'irsans' }}>
                            برای ارسال کد فعال سازی ، لطفا شماره موبایل خود را صحیح وارد نمایید.
                         </span>
                     </div>
@@ -136,7 +138,7 @@ const Login =()=>{
                     <Row   style={{  height:'100vh' ,   marginTop:'-60px' , justifyContent:'center' , alignContent:'center', alignItems:'center ' ,  ...styles.Hide}} >
                     <Col span={3}></Col>
                     <Col span={18}  >
-                    <div style={{textAlign:'right' , marginBottom:'10px' , fontSize:'15px' , fontWeight:'600' , color:'#6b6b6b'}}>کد فعال سازی  </div>
+                    <div style={{textAlign:'right' , marginBottom:'10px' , fontSize:'15px' ,  fontFamily: 'irsans'  , color:'#6b6b6b'}}>کد فعال سازی  </div>
                     <div className="StyleActiveCode"> 
                          <LockOutlined style={{fontSize:'20px', marginTop:'10px'}} />
                          <Input ref={inputElement1} inputMode="numeric"   size="large" onKeyDown={(event)=>{  if (event.key === 'Backspace'   || event.key === 'e' || event.key === 'E' || event.key === '-' || event.key === '+'|| event.key === '.'){ event.preventDefault()} else { }}} onKeyUp={(event)=>{if(activeCode1.length == 1){ inputElement2.current?.focus();}}} value={activeCode1} onChange={ChangeActiveCodeText1}  onFocus={()=>{ inputElement1.current?.select(); setIsActiveCode1(true)}}  onBlur={()=>{setIsActiveCode1(false)}} placeholder=""  bordered={false}  maxLength={1}  style={{ fontSize: '12px ' , marginLeft:'7%' , height:'30px' , width:'12%',  borderRadius:'0px' ,   ...styles.Focus1 }}  />   
@@ -148,11 +150,11 @@ const Login =()=>{
                         
                     </div>
                     
-                    <div>  <Button onClick={F_Login} size="large" type="primary" block  style={{ marginTop:'12px' , fontWeight:'600'}} >   ورود   </Button></div>
+                    <div>  <Button onClick={F_Login} size="large" type="primary" block  style={{  fontFamily: 'irsans'  , marginTop:'12px' , fontWeight:'600'}} >   ورود   </Button></div>
                   
                      <div style={{marginTop:'50px' , direction:'rtl' , paddingRight:'10px'}}>
                           <span style={{color:'red'}}>*</span>
-                          <span style={{textAlign:'justify', paddingRight:'10px'}}>
+                          <span style={{ fontFamily: 'irsans'  , textAlign:'justify', paddingRight:'10px'}}>
                                لطفا کد 5 رقمی ارسال شده به موبایل خود را وارد نمایید.
                           </span>
                      </div>
