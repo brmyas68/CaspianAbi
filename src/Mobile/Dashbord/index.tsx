@@ -72,7 +72,7 @@ const Dashbord = () => {
           <Row  style={{  textAlign:'center'}} dir="rtl">
           <Col span={24}>
             <div style={{   marginTop:'9px' , fontFamily: 'irsans'  , fontSize:'12px',}}>
-                       01133350400
+                       011-33350400
             </div>
             </Col>
           </Row>

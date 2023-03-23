@@ -33,60 +33,60 @@ const ArrowR= () =>{
 const Cafe =() => {
    
   const responsive = {
-    0: { items: 4 },
-    568: { items: 4 },
-    1024: { items: 5 },
+    0: { items: 3 },
+    568: { items: 3 },
+    1024: { items: 4 },
 };
 
 const items = [
   <div className="item" data-value="1"  style={{ textAlign:'center', marginRight:'3px' }}>
-     <Button block type="dashed"  style={{height:'35px', fontFamily:'irsans' ,padding: '0px' , fontSize:'13px'}} >
+     <Button block type="dashed"  style={{height:'35px', fontFamily:'irsans' ,padding: '0px' , fontSize:'12px'}} >
      اسپرسو بار
     </Button>
 </div>,
   <div className="item" data-value="2"  style={{  marginRight:'3px' }}>
-     <Button  block  type="dashed" style={{ height:'35px', fontFamily:'irsans' ,padding: '0px' ,  fontSize:'13px'}} >
+     <Button  block  type="dashed" style={{ height:'35px', fontFamily:'irsans' ,padding: '0px' ,  fontSize:'12px'}} >
      قـهوه دمـی
     </Button>
   </div>,
   <div className="item" data-value="3" style={{ textAlign:'center', marginRight:'3px' }}>
-    <Button block type="dashed" style={{ height:'35px', fontFamily:'irsans' ,padding: '0px' , fontSize:'13px'}} >
+    <Button block type="dashed" style={{ height:'35px', fontFamily:'irsans' ,padding: '0px' , fontSize:'12px'}} >
     آیس کافـی
     </Button>
   </div>,
   <div className="item" data-value="4" style={{ textAlign:'center', marginRight:'3px' }}>
-     <Button block type="dashed" style={{ height:'35px', fontFamily:'irsans' ,padding: '0px' , fontSize:'13px'}} >
+     <Button block type="dashed" style={{ height:'35px', fontFamily:'irsans' ,padding: '0px' , fontSize:'12px'}} >
      نوشیدنی گرم
      </Button>
   </div>,
   <div className="item" data-value="5"  style={{  textAlign:'center', marginRight:'3px' }}>
-      <Button block type="dashed" style={{height:'35px', fontFamily:'irsans' , padding: '0px' ,fontSize:'13px'}}  >
+      <Button block type="dashed" style={{height:'35px', fontFamily:'irsans' , padding: '0px' ,fontSize:'12px'}}  >
       دمـنوش ها
     </Button>
   </div>,
    <div className="item" data-value="6"  style={{ textAlign:'center', marginRight:'3px' }}>
-       <Button block type="dashed"  style={{height:'35px',fontFamily:'irsans' ,padding: '0px' , fontSize:'13px'}}>
+       <Button block type="dashed"  style={{height:'35px',fontFamily:'irsans' ,padding: '0px' , fontSize:'12px'}}>
        چای
        </Button>
   </div>,
    <div className="item" data-value="7"  style={{ textAlign:'center', marginRight:'3px' }}>
-    <Button block type="dashed"  style={{height:'35px', fontFamily:'irsans' , padding: '0px' ,fontSize:'13px'}}>
+    <Button block type="dashed"  style={{height:'35px', fontFamily:'irsans' , padding: '0px' ,fontSize:'12px'}}>
     مـاکـتیـل
     </Button>
   </div>,
 
   <div className="item" data-value="8"  style={{ textAlign:'center', marginRight:'3px' }}>
-    <Button block type="dashed"  style={{height:'35px',fontFamily:'irsans' ,padding: '0px' ,fontSize:'13px'}}>
+    <Button block type="dashed"  style={{height:'35px',fontFamily:'irsans' ,padding: '0px' ,fontSize:'12px'}}>
     سردنوش
     </Button>
   </div>,
   <div className="item" data-value="9"  style={{ textAlign:'center', marginRight:'3px' }}>
-    <Button block type="dashed"  style={{ height:'35px', fontFamily:'irsans' ,padding: '0px' ,fontSize:'13px'}}>
+    <Button block type="dashed"  style={{ height:'35px', fontFamily:'irsans' ,padding: '0px' ,fontSize:'12px'}}>
     آبمیوه طبیعی
     </Button>
   </div>,
   <div className="item" data-value="10"  style={{ textAlign:'center', marginRight:'3px' }}>
-    <Button block type="dashed"   style={{ height:'35px', fontFamily:'irsans' , padding: '0px' ,fontSize:'13px'}}>
+    <Button block type="dashed"   style={{ height:'35px', fontFamily:'irsans' , padding: '0px' ,fontSize:'12px'}}>
     اسموتی
     </Button>
   </div>,
@@ -113,12 +113,12 @@ const items = [
  
 
         <div style={{   flexWrap:'wrap' , direction:'rtl' , marginTop:'5px' , marginBottom:'30px',  display:'inline-flex'}}>
-            <div style={{width:'33%' , textAlign:'center', marginTop:'15px'}}>
+            <div style={{width:'32%' , textAlign:'center', marginTop:'15px',  marginRight:'4px'}}>
                 <Image src={cafe1} width={120}   height={115}/>
-                <div style={{fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
+                <div style={{ marginTop:'10px', fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingRight:'0px'}}>
                 لاتــه
                 </div>
-                <div style={{fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
+                <div style={{fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
                 85.000  T
                 </div>
                 <div>
@@ -127,12 +127,12 @@ const items = [
                 </Button>
                 </div>
             </div>
-            <div style={{width:'33%', textAlign:'center', marginTop:'15px' }}>
+            <div style={{width:'32%', textAlign:'center', marginTop:'15px' ,  marginRight:'4px'}}>
                 <Image src={cafe2} width={120}   height={115}/>
-                <div style={{fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
+                <div style={{marginTop:'10px',fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingRight:'0px'}}>
                 آیس آمریکانو
                 </div>
-                <div style={{fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
+                <div style={{fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
                 80.000  T
                 </div>
                 <div>
@@ -142,12 +142,12 @@ const items = [
                 </div>
             </div>
 
-            <div style={{width:'33%', textAlign:'center', marginTop:'15px'}}>
+            <div style={{width:'32%', textAlign:'center', marginTop:'15px',  marginRight:'4px'}}>
                 <Image src={cafe3} width={120}   height={115}/>
-                <div style={{fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
+                <div style={{marginTop:'10px',fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingRight:'0px'}}>
                 دمنوش گل گاو زبان
                 </div>
-                <div style={{fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
+                <div style={{fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0px'}}>
                    60.000  T
                 </div>
                 <div>
@@ -157,12 +157,12 @@ const items = [
                 </div>
             </div>
 
-            <div style={{width:'33%', textAlign:'center', marginTop:'15px'}}>
+            <div style={{width:'32%', textAlign:'center', marginTop:'15px',  marginRight:'4px'}}>
                 <Image src={cafe4} width={120}   height={115}/>
-                <div style={{fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingRight:'0px'}}>
+                <div style={{marginTop:'10px',fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingRight:'0px'}}>
                 هرمس
                 </div>
-                <div style={{fontFamily:'irsans' , fontSize:'12px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0x'}}>
+                <div style={{fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingTop:'10px' ,paddingRight:'0x'}}>
                    95.000  T
                 </div>
                 <div>
