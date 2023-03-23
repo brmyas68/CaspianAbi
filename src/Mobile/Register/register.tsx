@@ -67,7 +67,7 @@ const Register =() => {
                 <Row  style={{  textAlign:'center'}} dir="rtl">
                     
                     <Col span={24} >
-                       <Button  onClick={F_SelectFile}    style={{ width:'30%' , fontSize:'13px', fontFamily: 'irsans'  ,}} icon={<UploadOutlined  />}>انتخاب عکس</Button>
+                       <Button  onClick={F_SelectFile}    style={{ width:'35%' , fontSize:'13px', fontFamily: 'irsans'  ,}} icon={<UploadOutlined  />}>انتخاب عکس</Button>
                     </Col>
                         
                 </Row>
