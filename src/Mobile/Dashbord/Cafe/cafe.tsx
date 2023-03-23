@@ -106,8 +106,8 @@ const items = [
                 responsive={responsive}
                 controlsStrategy="alternate"
                 disableDotsControls={true}
-                renderPrevButton={( )=>{return <ArrowR/>}}
-                renderNextButton={( )=>{return <ArrowL />}}
+                renderPrevButton={( )=>{return <ArrowL/>}}
+                renderNextButton={( )=>{return <ArrowR />}}
             />
 
  
