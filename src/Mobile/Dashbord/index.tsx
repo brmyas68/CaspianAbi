@@ -48,21 +48,21 @@ const Dashbord = () => {
 
          <Header/>
 
-         <div style={{display:'flex' ,flexDirection:'column' ,  justifyContent:'center' , alignContent:'center' , marginTop:'100px' ,}}>
+         <div style={{display:'flex' ,flexDirection:'column' ,  justifyContent:'center' , alignContent:'center' , marginTop:'120px' ,}}>
         
           <Row>
             <Col span={24}>
-            <div  >  <img src={logo} alt="" style={{marginLeft:'30%' ,width:'220px', height:'55px'}} /></div>
+            <div  >  <img src={logo} alt="" style={{marginLeft:'20%' ,width:'220px', height:'55px'}} /></div>
             </Col>
           </Row>
           <Row>
           <Col span={24}>
-            <div style={{  marginLeft:'26%' , marginTop:'25px' ,  fontFamily: 'irsans'  , fontSize:'12px', }}>  ساری - بلوار آزادی، خيابان رفاه،كوچه رفاه سوم</div>
+            <div style={{  marginLeft:'20%' , marginTop:'45px' ,  fontFamily: 'irsans'  , fontSize:'12px', }}>  ساری - بلوار آزادی، خيابان رفاه،كوچه رفاه سوم</div>
             </Col>
           </Row>
           <Row>
           <Col span={24}>
-              <div style={{  marginLeft:'40%' , marginTop:'20px' ,  fontFamily: 'irsans'  , fontSize:'20px', }}>   
+              <div style={{  marginLeft:'40%' , marginTop:'30px' ,  fontFamily: 'irsans'  , fontSize:'20px', }}>   
               <InstagramOutlined style={{ marginRight:'10px'}} />
               <WhatsAppOutlined style={{ marginRight:'10px'}}/>
               <TwitterOutlined />
@@ -71,7 +71,7 @@ const Dashbord = () => {
           </Row>
           <Row>
           <Col span={24}>
-            <div style={{ marginLeft:'40%' , marginTop:'9px' , fontFamily: 'irsans'  , fontSize:'12px',}}>
+            <div style={{ marginLeft:'41%' , marginTop:'9px' , fontFamily: 'irsans'  , fontSize:'12px',}}>
                        01133350400
             </div>
             </Col>
@@ -92,7 +92,7 @@ const Dashbord = () => {
                   <div
                     style={{
                         padding: 2, 
-                        fontSize:'12px',
+                        fontSize:'10px',
                         textAlign:'center',
                         fontFamily: 'irsans'  , 
                     }}
@@ -108,7 +108,7 @@ const Dashbord = () => {
                     <div
                     style={{
                         padding: 2, 
-                        fontSize:'12px',
+                        fontSize:'10px',
                         textAlign:'center',
                         fontFamily: 'irsans'  , 
                     }}
@@ -125,7 +125,7 @@ const Dashbord = () => {
                     <div
                     style={{
                         padding: 2, 
-                        fontSize:'12px',
+                        fontSize:'10px',
                         textAlign:'center',
                         fontFamily: 'irsans'  , 
                     }}
@@ -142,7 +142,7 @@ const Dashbord = () => {
                         <div
                         style={{
                             padding: 2, 
-                            fontSize:'12px',
+                            fontSize:'10px',
                             textAlign:'center',
                             fontFamily: 'irsans'  , 
                         }}
@@ -158,7 +158,7 @@ const Dashbord = () => {
                             <div
                             style={{
                                 padding: 2, 
-                                fontSize:'12px',
+                                fontSize:'10px',
                                 textAlign:'center',
                                 fontFamily: 'irsans'  , 
                             }}
@@ -174,7 +174,7 @@ const Dashbord = () => {
                                 <div
                                 style={{
                                     padding: 2, 
-                                    fontSize:'12px',
+                                    fontSize:'10px',
                                     textAlign:'center',
                                     fontFamily: 'irsans'  , 
                                 }}
@@ -191,7 +191,7 @@ const Dashbord = () => {
                                 style={{
                                     padding: 1,
                                     paddingTop:2,
-                                    fontSize:'12px',
+                                    fontSize:'10px',
                                     textAlign:'right',
                                     fontFamily: 'irsans'  , 
                                 }}
