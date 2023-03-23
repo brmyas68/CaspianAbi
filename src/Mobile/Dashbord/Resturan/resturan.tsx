@@ -116,7 +116,7 @@ const Resturan =() => {
 
 
         <div style={{    flexWrap:'wrap' , direction:'rtl' , marginTop:'5px' , marginBottom:'30px',  display:'inline-flex'}}>
-            <div style={{width:'33%' , textAlign:'center', marginTop:'15px'}}>
+            <div style={{width:'33%' , textAlign:'center', marginTop:'15px',  marginRight:'2px'}}>
                 <Image src={food1} width={120}   height={115}/>
                 <div style={{minHeight:'40px' , fontFamily:'irsans' , fontSize:'11px' , textAlign:'center' , paddingRight:'0px'}}>
                   کباب برگ مخصوص
