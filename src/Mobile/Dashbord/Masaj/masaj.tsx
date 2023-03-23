@@ -25,11 +25,11 @@ const Masaj =() => {
          
         <div style={{width:'90%', height:'100vh' , marginTop:'120px' , marginRight:'5%', marginLeft:'5%' , justifyContent:'start' , alignContent:'start' , flexDirection:'column'  ,    display:'flex'}}>
              
-         <Button type="dashed" style={{height:'50px', fontSize:'15px', fontFamily:'irsans',}} shape="default" onClick={F_MasajBodyBuilding} >
+         <Button type="dashed" style={{height:'50px', fontSize:'14px', fontFamily:'irsans',}} shape="default" onClick={F_MasajBodyBuilding} >
            ماساژ بدنسازی
          </Button>
             <br />
-         <Button type="dashed" style={{height:'50px', fontSize:'15px', fontFamily:'irsans',}} shape="default">
+         <Button type="dashed" style={{height:'50px', fontSize:'14px', fontFamily:'irsans',}} shape="default">
            ماساژ استخر
          </Button>
          <br />

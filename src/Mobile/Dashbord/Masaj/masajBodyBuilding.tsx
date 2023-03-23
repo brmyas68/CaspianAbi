@@ -49,7 +49,7 @@ const MasajBodyBuilding =() => {
                     </Col>
                  </Row>
                 <Row>
-                        <Col  span={24}  style={{ textAlign:'center' , marginTop:'20px', marginBottom:'15px' }}>
+                        <Col  span={24}  style={{ textAlign:'center' , marginTop:'22px', marginBottom:'15px' }}>
                             <Button type="primary" block   style={{fontFamily:'irsans',  fontSize:'12px' ,   height:'35px' ,   width:'90%' , background:'green' ,    }}>
                                 رزرو  ماساژ
                             </Button>
@@ -90,7 +90,7 @@ const MasajBodyBuilding =() => {
                     </Col>
                  </Row>
                 <Row>
-                        <Col  span={24}  style={{ textAlign:'center' , marginTop:'20px', marginBottom:'15px' }}>
+                        <Col  span={24}  style={{ textAlign:'center' , marginTop:'22px', marginBottom:'15px' }}>
                             <Button type="primary" block   style={{  fontSize:'13px' ,fontFamily:'irsans', height:'35px' ,   width:'90%' , background:'green' ,    }}>
                                 رزرو  ماساژ
                             </Button>
