@@ -43,12 +43,12 @@ const Pool = () => {
     return(
         <>
            <HeaderPool  /> 
-           <br /> <br /> <br /><br />
+           <br /> <br />  
 
-           <div style={{marginRight:'25%'}}>
+           <div style={{marginRight:'25%' , marginTop:'80px'}}>
             <Row justify="start" dir="rtl">
               
-              <Col span={24} style={{ fontSize:'14px' , fontFamily:'irsans', paddingBottom:'5px'}}>
+              <Col span={24} style={{ fontSize:'13px' , fontFamily:'irsans', paddingBottom:'5px'}}>
                   تاریخ : 
               </Col>
                  
@@ -59,12 +59,12 @@ const Pool = () => {
                 <DatePicker 
                  
                     style={{
-                        fontSize:'14px' , fontFamily:'irsans',
-                        width:'80%',
+                        fontSize:'13px' , fontFamily:'irsans',
+                        width:'76%',
                         height:'38px'
                     }}
                     containerStyle={{
-                        fontSize:'14px' , fontFamily:'irsans',
+                        fontSize:'13px' , fontFamily:'irsans',
                     }}
                     className="green"
                     weekDays={weekDays}
@@ -78,7 +78,7 @@ const Pool = () => {
              <br />
              <Row justify="start" dir="rtl">
               
-              <Col span={24} style={{  fontSize:'14px' , fontFamily:'irsans', paddingBottom:'5px'}}>
+              <Col span={24} style={{  fontSize:'13px' , fontFamily:'irsans', paddingBottom:'5px'}}>
               ساعت   :  
               </Col>
                  
@@ -101,7 +101,7 @@ const Pool = () => {
              <br />
              <Row justify="start" dir="rtl">
               
-              <Col span={24} style={{  fontSize:'14px' , fontFamily:'irsans', paddingBottom:'5px'}}>
+              <Col span={24} style={{  fontSize:'13px' , fontFamily:'irsans', paddingBottom:'5px'}}>
                 تعداد   :  
               </Col>
                  
@@ -109,27 +109,27 @@ const Pool = () => {
              <Row justify="start" dir="rtl">
                
                 <Col span={24}>
-                    <Input size="large"  ref={inputElementCountPool} onKeyUp={(event)=>{  if ( countPool == "0") { setCountPool("1"); }    }}  onFocus={()=>{ inputElementCountPool.current?.select();   }} value={countPool}   onChange={ChangeCountPool}   min={1}  style={{textAlign:'left' , direction:'ltr' , width:'60.5%'}} />
+                    <Input size="large"  inputMode="numeric" ref={inputElementCountPool} onKeyUp={(event)=>{  if ( countPool == "0") { setCountPool("1"); }    }}  onFocus={()=>{ inputElementCountPool.current?.select();   }} value={countPool}   onChange={ChangeCountPool}   min={1}  style={{textAlign:'left' , direction:'ltr' , width:'60.5%'}} />
                 </Col>
              </Row>
              <br />
              <Row justify="start" dir="rtl">
               
-              <Col span={24} style={{  fontSize:'14px' , fontFamily:'irsans', paddingBottom:'5px', paddingRight:'3px'}}>
+              <Col span={24} style={{  fontSize:'13px' , fontFamily:'irsans', paddingBottom:'5px', paddingRight:'3px'}}>
                   قیمت   :  
               </Col>
                  
              </Row>
              <Row justify="start" dir="rtl">
                
-                <Col span={24} style={{ fontSize:'14px' , fontFamily:'irsans', color:'red', textAlign:'center' ,  paddingLeft:'60px' ,paddingBottom:'5px' }}>
+                <Col span={24} style={{ fontSize:'13px' , fontFamily:'irsans', color:'red', textAlign:'center' ,  paddingLeft:'60px' ,paddingBottom:'5px' }}>
                    90,000 تومان
                 </Col>
              </Row>
              <Row justify="start" dir="rtl">
                  
                 <Col span={24} style={{paddingTop:'5px' ,  }}>
-                <Button type="primary"    size="large"   style={{ width:'62%' , fontSize:'14px' , fontFamily:'irsans', background:'green' , marginTop:'20px', marginBottom:'10px', }}>
+                <Button type="primary"    size="large"   style={{ width:'60%' , fontSize:'13px' , fontFamily:'irsans', background:'green' , marginTop:'20px', marginBottom:'10px', }}>
                    رزرو بلیط
                 </Button>
                 </Col>
