@@ -45,7 +45,7 @@ const Pool = () => {
            <HeaderPool  /> 
            <br /> <br />  
 
-           <div style={{ width:'70%',  marginTop:'80px'}}>
+           <div style={{ width:'65%',  marginTop:'60px'}}>
             <Row  style={{textAlign:'right'}} dir="rtl">
               
               <Col span={24} style={{ fontSize:'13px' , fontFamily:'irsans', paddingBottom:'5px'}}>
@@ -60,7 +60,7 @@ const Pool = () => {
                  
                     style={{
                         fontSize:'13px' , fontFamily:'irsans',
-                        width:'76%',
+                        width:'78.3%',
                         height:'38px'
                     }}
                     containerStyle={{
@@ -122,13 +122,13 @@ const Pool = () => {
              </Row>
              <Row  style={{textAlign:'center'}} dir="rtl">
                
-                <Col span={24} style={{ marginRight:'-10px', fontSize:'13px' , fontFamily:'irsans', color:'red', paddingBottom:'5px' }}>
+                <Col span={24} style={{ marginRight:'-3px', fontSize:'14px' , fontFamily:'irsans', color:'red', paddingBottom:'5px' }}>
                    90,000 تومان
                 </Col>
              </Row>
              <Row  style={{textAlign:'right'}} dir="rtl">
                  
-                <Col span={24} style={{paddingTop:'5px' ,  }}>
+                <Col span={24} style={{paddingTop:'10px' ,  }}>
                 <Button type="primary"    size="large"   style={{ width:'60%' , fontSize:'13px' , fontFamily:'irsans', background:'green' , marginTop:'20px', marginBottom:'10px', }}>
                    رزرو بلیط
                 </Button>
