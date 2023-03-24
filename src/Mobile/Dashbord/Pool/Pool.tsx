@@ -60,7 +60,7 @@ const Pool = () => {
                  
                     style={{
                         fontSize:'13px' , fontFamily:'irsans',
-                        width:'78.3%',
+                        width:'76%',
                         height:'38px'
                     }}
                     containerStyle={{
@@ -122,7 +122,7 @@ const Pool = () => {
              </Row>
              <Row  style={{textAlign:'center'}} dir="rtl">
                
-                <Col span={24} style={{ marginRight:'-10px', fontSize:'14px' , fontFamily:'irsans', color:'red', paddingBottom:'5px' }}>
+                <Col span={24} style={{ marginRight:'-15px', fontSize:'14px' , fontFamily:'irsans', color:'red', paddingBottom:'5px' }}>
                    90,000 تومان
                 </Col>
              </Row>

@@ -8,6 +8,9 @@ import persian_fa from "react-date-object/locales/persian_fa";
 import "react-multi-date-picker/styles/colors/green.css";
 import { Col, Row ,Radio, Select, Button, InputNumber , Input, InputRef} from "antd";
 
+import './../../fonts/irsans.ttf';
+import './../dashbord.css';
+
 const Boling = () => {
     const [dateTime, setDateTime] = useState(new Date());
     const weekDays = ["ش", "ی", "د", "س", "چ", "پ", "ج"];
@@ -65,29 +68,27 @@ const Boling = () => {
     return(
         <>
            <HeaderBoling  /> 
-           <br /> <br /> <br /><br />
+           <br /> <br />  
 
-           <div style={{marginRight:'25%'}}>
-           <Row justify="start" dir="rtl">
+           <div style={{ width:'70%',  marginTop:'60px'}}>
+           <Row  style={{textAlign:'right'}} dir="rtl">
               
-              <Col span={24} style={{ fontSize:'17px' ,  fontWeight:'600' , paddingBottom:'5px'}}>
+              <Col span={24} style={{  fontSize:'13px' , fontFamily:'irsans',  paddingBottom:'5px'}}>
                   تاریخ : 
               </Col>
                  
             </Row>
-             <Row justify="start" dir="rtl">
+            <Row  style={{textAlign:'right'}} dir="rtl">
                 
                 <Col  span={24}>
                 <DatePicker 
                     style={{
-                      fontFamily:'tahoma',
-                      fontSize:'14px', fontWeight:'600' ,
-                      width:'80%',
+                      fontSize:'13px' , fontFamily:'irsans', 
+                      width:'76%',
                       height:'38px'
                   }}
                   containerStyle={{
-                      fontFamily:'tahoma',
-                      fontSize:'14px', fontWeight:'600' ,
+                    fontSize:'13px' , fontFamily:'irsans', 
                   }}
                     className="green"
                     weekDays={weekDays}
@@ -99,14 +100,14 @@ const Boling = () => {
                 </Col>
              </Row>
              <br />
-             <Row justify="start" dir="rtl">
+             <Row  style={{textAlign:'right'}} dir="rtl">
               
-              <Col span={24} style={{ fontSize:'17px' ,  fontWeight:'600' , paddingBottom:'5px'}}>
+              <Col span={24} style={{  fontSize:'13px' , fontFamily:'irsans',  paddingBottom:'5px'}}>
                  ست   :  
               </Col>
                  
              </Row>
-             <Row justify="start" dir="rtl">
+             <Row  style={{textAlign:'right'}} dir="rtl">
                 
                 <Col span={24}>
                 <Select
@@ -122,14 +123,14 @@ const Boling = () => {
                 </Col>
              </Row>
              <br />
-             <Row justify="start" dir="rtl">
+             <Row  style={{textAlign:'right'}} dir="rtl">
               
-              <Col span={24} style={{ fontSize:'17px' ,  fontWeight:'600' , paddingBottom:'5px'}}>
+              <Col span={24} style={{  fontSize:'13px' , fontFamily:'irsans', paddingBottom:'5px'}}>
               ساعت   :  
               </Col>
                  
              </Row>
-             <Row justify="start" dir="rtl">
+             <Row  style={{textAlign:'right'}} dir="rtl">
                 
                 <Col span={24}>
                 <Select
@@ -145,23 +146,23 @@ const Boling = () => {
                 </Col>
              </Row>
              <br />
-             <Row justify="start" dir="rtl">
+             <Row  style={{textAlign:'right'}} dir="rtl">
               
-              <Col span={24} style={{ fontSize:'17px' ,  fontWeight:'600' , paddingBottom:'5px', paddingRight:'3px'}}>
+              <Col span={24} style={{ fontSize:'13px' , fontFamily:'irsans',  paddingBottom:'5px', paddingRight:'3px'}}>
                   قیمت   :  
               </Col>
                  
              </Row>
-             <Row justify="start" dir="rtl">
+             <Row  style={{textAlign:'right'}} dir="rtl">
                
-               <Col span={24} style={{fontSize:'17px' , color:'red', textAlign:'center' , fontWeight:'600' , paddingLeft:'60px' ,paddingBottom:'5px' }}>
+               <Col span={24} style={{  color:'red', textAlign:'center' ,  fontSize:'13px' , fontFamily:'irsans' , paddingLeft:'60px' ,paddingBottom:'5px' }}>
                   90,000 تومان
                </Col>
             </Row>
-             <Row justify="start" dir="rtl">
+            <Row  style={{textAlign:'right'}} dir="rtl">
               
                 <Col span={24} style={{paddingTop:'5px' }}>
-                <Button type="primary"    size="large"   style={{ width:'62%' , fontWeight:'600' , background:'green' , marginTop:'20px', marginBottom:'10px', fontSize:'15px'}}>
+                <Button type="primary"    size="large"   style={{ width:'62%' , fontSize:'13px' , fontFamily:'irsans',  background:'green' , marginTop:'20px', marginBottom:'10px',  }}>
                    رزرو بولینگ
                 </Button>
                 </Col>
