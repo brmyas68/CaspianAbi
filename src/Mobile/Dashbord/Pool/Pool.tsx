@@ -45,7 +45,7 @@ const Pool = () => {
            <HeaderPool  /> 
            <br /> <br />  
 
-           <div style={{ width:'65%',  marginTop:'60px'}}>
+           <div style={{ width:'70%',  marginTop:'60px'}}>
             <Row  style={{textAlign:'right'}} dir="rtl">
               
               <Col span={24} style={{ fontSize:'13px' , fontFamily:'irsans', paddingBottom:'5px'}}>
@@ -122,7 +122,7 @@ const Pool = () => {
              </Row>
              <Row  style={{textAlign:'center'}} dir="rtl">
                
-                <Col span={24} style={{ marginRight:'-3px', fontSize:'14px' , fontFamily:'irsans', color:'red', paddingBottom:'5px' }}>
+                <Col span={24} style={{ marginRight:'-10px', fontSize:'14px' , fontFamily:'irsans', color:'red', paddingBottom:'5px' }}>
                    90,000 تومان
                 </Col>
              </Row>
