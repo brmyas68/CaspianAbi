@@ -8,6 +8,9 @@ import persian_fa from "react-date-object/locales/persian_fa";
 import "react-multi-date-picker/styles/colors/green.css";
 import { Col, Row ,Radio, Select, Button, InputNumber , Input, InputRef} from "antd";
 
+import './../../fonts/irsans.ttf';
+import './../dashbord.css';
+
 const Pool = () => {
     const [dateTime, setDateTime] = useState(new Date());
     const weekDays = ["ش", "ی", "د", "س", "چ", "پ", "ج"];
@@ -45,7 +48,7 @@ const Pool = () => {
            <div style={{marginRight:'25%'}}>
             <Row justify="start" dir="rtl">
               
-              <Col span={24} style={{ fontSize:'17px' ,  fontWeight:'600' , paddingBottom:'5px'}}>
+              <Col span={24} style={{ fontSize:'14px' , fontFamily:'irsans', paddingBottom:'5px'}}>
                   تاریخ : 
               </Col>
                  
@@ -56,14 +59,12 @@ const Pool = () => {
                 <DatePicker 
                  
                     style={{
-                        fontFamily:'tahoma',
-                        fontSize:'14px', fontWeight:'600' ,
+                        fontSize:'14px' , fontFamily:'irsans',
                         width:'80%',
                         height:'38px'
                     }}
                     containerStyle={{
-                        fontFamily:'tahoma',
-                        fontSize:'14px', fontWeight:'600' ,
+                        fontSize:'14px' , fontFamily:'irsans',
                     }}
                     className="green"
                     weekDays={weekDays}
@@ -77,7 +78,7 @@ const Pool = () => {
              <br />
              <Row justify="start" dir="rtl">
               
-              <Col span={24} style={{ fontSize:'17px' ,  fontWeight:'600' , paddingBottom:'5px'}}>
+              <Col span={24} style={{  fontSize:'14px' , fontFamily:'irsans', paddingBottom:'5px'}}>
               ساعت   :  
               </Col>
                  
@@ -100,7 +101,7 @@ const Pool = () => {
              <br />
              <Row justify="start" dir="rtl">
               
-              <Col span={24} style={{ fontSize:'17px' ,  fontWeight:'600' , paddingBottom:'5px'}}>
+              <Col span={24} style={{  fontSize:'14px' , fontFamily:'irsans', paddingBottom:'5px'}}>
                 تعداد   :  
               </Col>
                  
@@ -114,21 +115,21 @@ const Pool = () => {
              <br />
              <Row justify="start" dir="rtl">
               
-              <Col span={24} style={{ fontSize:'17px' ,  fontWeight:'600' , paddingBottom:'5px', paddingRight:'3px'}}>
+              <Col span={24} style={{  fontSize:'14px' , fontFamily:'irsans', paddingBottom:'5px', paddingRight:'3px'}}>
                   قیمت   :  
               </Col>
                  
              </Row>
              <Row justify="start" dir="rtl">
                
-                <Col span={24} style={{fontSize:'17px' , color:'red', textAlign:'center' , fontWeight:'600' , paddingLeft:'60px' ,paddingBottom:'5px' }}>
+                <Col span={24} style={{ fontSize:'14px' , fontFamily:'irsans', color:'red', textAlign:'center' ,  paddingLeft:'60px' ,paddingBottom:'5px' }}>
                    90,000 تومان
                 </Col>
              </Row>
              <Row justify="start" dir="rtl">
                  
                 <Col span={24} style={{paddingTop:'5px' ,  }}>
-                <Button type="primary"    size="large"   style={{ width:'62%' , fontWeight:'600' , background:'green' , marginTop:'20px', marginBottom:'10px', fontSize:'15px'}}>
+                <Button type="primary"    size="large"   style={{ width:'62%' , fontSize:'14px' , fontFamily:'irsans', background:'green' , marginTop:'20px', marginBottom:'10px', }}>
                    رزرو بلیط
                 </Button>
                 </Col>
