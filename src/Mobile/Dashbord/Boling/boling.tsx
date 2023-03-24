@@ -84,7 +84,7 @@ const Boling = () => {
                 <DatePicker 
                     style={{
                       fontSize:'13px' , fontFamily:'irsans', 
-                      width:'76%',
+                      width:'75%',
                       height:'38px'
                   }}
                   containerStyle={{
@@ -153,9 +153,9 @@ const Boling = () => {
               </Col>
                  
              </Row>
-             <Row  style={{textAlign:'right'}} dir="rtl">
+             <Row  style={{textAlign:'center'}} dir="rtl">
                
-               <Col span={24} style={{  color:'red', textAlign:'center' ,  fontSize:'13px' , fontFamily:'irsans' , paddingLeft:'60px' ,paddingBottom:'5px' }}>
+               <Col span={24} style={{  marginRight:'-15px', color:'red',    fontSize:'14px' , fontFamily:'irsans' ,  paddingBottom:'5px' }}>
                   90,000 تومان
                </Col>
             </Row>
