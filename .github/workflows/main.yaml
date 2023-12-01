@@ -50,7 +50,7 @@ jobs:
 #           git clone git@github.com:brmyas68/CaspianAbi.git 
 #           cd CaspianAbi/
 #           docker build -t test20 .
-#           docker compose down 
+#           docker compose down k
 #           docker compose up -d
      
 #         #ssh_user: ${{ secrets.SSH_USER }}
